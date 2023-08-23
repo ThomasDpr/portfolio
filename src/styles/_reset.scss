@@ -1,0 +1,48 @@
+// @use 'scss-reset/reset';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  // overflow-x: hidden; /* Pour éviter les barres de défilement horizontales */
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  font-size: 100%;
+  line-height: 1.5;
+  text-size-adjust: 100%;
+}
+
+body {
+  // background-color: #F4F3EE;
+  // background-color: #ECE6D7;
+  background-color: #EFEFEF;
+}
+
+
+#root, .App {
+  min-height: 100vh; /* Prend au minimum toute la hauteur de la fenêtre de visualisation */
+  width: 100vw;      /* Prend toute la largeur de la fenêtre de visualisation */
+}
+
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}

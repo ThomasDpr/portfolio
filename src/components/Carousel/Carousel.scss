@@ -1,0 +1,87 @@
+@import 'swiper/css/bundle';
+// @import '../../assets/icons/alrepo.svg';
+
+// DIV PARENT DU COMPOSANT CAROUSEL
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  // border-radius: 20px;
+  padding-top: 40px;
+
+
+
+
+  .carousel {
+    // border-radius: 20px;
+    // border-left: 2px solid rgb(0, 0, 0);
+    // border-left-width: 4px;
+    // border-left-style: dashed;
+    width: 100%;
+    padding: 20px;
+
+
+    .swiper-slide {
+      border-radius: 20px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  .swiper-elements-outside {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      // background: rgba(0, 0, 0, 0.8);
+      border-radius: 50%;
+      position: relative;
+      width: 60px;
+      height: 40px;
+      margin: 0;
+      left: 0;
+      right: 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border: 2px solid rgba(0, 0, 0, 0.8);
+
+
+      &:after {
+        display: none;
+      }
+
+      &:hover {
+        border: 2px dotted rgba(0, 0, 0, 0.8);
+      }
+    }
+    .swiper-pagination {
+      position: static;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .swiper-pagination-bullet {
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 8px;
+      height: 8px;
+      margin: 0 5px;
+    }
+
+    .swiper-pagination-bullet-active {
+      background-color: rgba(0, 0, 0, 0.8);
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+.swiper-button-prev {
+  background-image: url(../../assets/icons/arrow-left.svg);
+}
+
+.swiper-button-next {
+  background-image: url(../../assets/icons/arrow-right.svg);
+}

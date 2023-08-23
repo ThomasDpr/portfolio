@@ -1,0 +1,43 @@
+.card {
+  position: relative; // Positionnement relatif pour que le contenu soit au-dessus de l'image
+  overflow: hidden; // Cache le contenu qui dépasse de la carte
+  // width: auto; // Largeur de la carte
+  height: 400px; // Hauteur de la carte
+  display: flex; // Flexbox pour aligner le contenu
+  flex-direction: column; // Alignement vertical
+  justify-content: flex-end; // Alignement vertical
+  border-radius: 20px; // Coins arrondis
+
+}
+
+.card-content {
+  background-color: rgba(0, 0, 0, 0.8); // Un fond noir semi-transparent
+  padding: 20px; // Espace autour du contenu pour un meilleur rendu
+  z-index: 1; // Ccontenu toujours au-dessus de l'image
+  position: relative; // Pour que le z-index fonctionne
+  bottom: 0; // Le contenu est en bas de la carte
+  color: white; // Texte en blanc
+}
+
+.card-image {
+  position: absolute; // Positionnement absolu pour que l'image soit au-dessus du contenu
+  height: 100%; // L'image prend toute la hauteur de la carte
+  width: 100%; // L'image prend toute la surface de la carte
+  background-size: cover; // Pour que l'image couvre toute la surface
+  background-position: center; // Pour centrer l'image
+  object-fit: cover; // Assure que l'image remplisse l'espace défini
+  z-index: 0; // Place l'image sous le contenu
+}
+
+.language-icon {
+  position: absolute; // Pour positionner l'icône
+  bottom: 10px; // Espace depuis le bas
+  right: 10px; // Espace depuis la droite
+  width: 50px; // Largeur de l'icône (à ajuster selon vos besoins)
+  height: 50px; // Hauteur de l'icône (doit être égale à la largeur pour être parfaitement ronde)
+  border-radius: 50%; // Rend l'icône circulaire
+  object-fit: cover; // Assure que l'image remplisse l'espace défini
+  background-color: #F4F3EE; // Fond blanc pour que l'icône soit visible
+  border:3px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+}
