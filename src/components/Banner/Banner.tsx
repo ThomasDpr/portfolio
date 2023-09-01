@@ -27,7 +27,7 @@ export const Banner: React.FC = () => {
         <Marquee {...marqueeProps} gradientColor={[255, 255, 255]} gradient={true}>
           <div className="banner__container__text">
             {items.map((item, index) => (
-              <span className="banner__container__text__item" key={index}>{item}</span>
+              <span className="banner__container__text__item" key={item}>{item}</span>
             ))}
           </div>
         </Marquee>

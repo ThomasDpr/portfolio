@@ -23,18 +23,19 @@ $main-font: "Poppins", sans-serif;
       text-transform: uppercase;                              // Transforme le texte en majuscule
       font-size: 48px;                                        // Défini la taille de la police
       font-family: $main-font;                                // Défini la police de caractère
-      -webkit-text-stroke: 1px rgb(0, 0, 0);                // Défini la couleur de la bordure du texte
+      // -webkit-text-stroke: 1px rgb(0, 0, 0);                // Défini la couleur de la bordure du texte
+      -webkit-text-stroke: 1px #ECE6D7;                // Défini la couleur de la bordure du texte
       -webkit-text-fill-color: transparent;                   // Défini la couleur de remplissage du texte
     }
   }
 
   // Stylisation spécifique de la section de titre de gauche
   .title-left {
-    border-left: 3px dashed rgb(0, 0, 0);                   // Défini la bordure gauche du titre
+    border-left: 3px dashed #ECE6D7;                   // Défini la bordure gauche du titre
   }
   // Stylisation spécifique de la section de titre de droite
   .title-right {
-    border-right: 3px dashed rgb(0, 0, 0);                  // Défini la bordure droite du titre
+    border-right: 3px dashed #ECE6D7;                  // Défini la bordure droite du titre
   }
 
   // Stylisation de la section carousel

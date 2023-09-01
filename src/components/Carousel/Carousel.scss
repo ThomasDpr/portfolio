@@ -10,9 +10,6 @@
   // border-radius: 20px;
   padding-top: 40px;
 
-
-
-
   .carousel {
     // border-radius: 20px;
     // border-left: 2px solid rgb(0, 0, 0);
@@ -46,15 +43,16 @@
       right: 0;
       background-repeat: no-repeat;
       background-size: 100%;
-      border: 2px solid rgba(0, 0, 0, 0.8);
-
+      // border: 2px solid rgba(0, 0, 0, 0.8);
+      border: 2px solid #ECE6D7;
 
       &:after {
         display: none;
       }
 
       &:hover {
-        border: 2px dotted rgba(0, 0, 0, 0.8);
+        // border: 2px dotted rgba(0, 0, 0, 0.8);
+        border: 2px dotted #ECE6D7;
       }
     }
     .swiper-pagination {
@@ -65,14 +63,16 @@
 
     }
     .swiper-pagination-bullet {
-      background-color: rgba(0, 0, 0, 0.8);
+      // background-color: rgba(0, 0, 0, 0.8);
+      background-color: #ECE6D7;
       width: 8px;
       height: 8px;
       margin: 0 5px;
     }
 
     .swiper-pagination-bullet-active {
-      background-color: rgba(0, 0, 0, 0.8);
+      // background-color: rgba(0, 0, 0, 0.8);
+      background-color: #ECE6D7;
       width: 10px;
       height: 10px;
     }

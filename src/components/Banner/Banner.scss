@@ -1,8 +1,4 @@
-// Variables
-$banner-bg: linear-gradient(to left, #363636, #000);
-$container-bg: #f4f3ed;
-$text-color: #323232;
-$font-weight-bold: 600;
+@use "../../styles/_variables.scss" as *;
 
 .banner {
   height: 70px;
@@ -31,6 +27,7 @@ $font-weight-bold: 600;
         border-left: 3px dashed $text-color;
         text-transform: uppercase;
         margin: 0 40px;
+        font-family: $font-family;
       }
     }
   }

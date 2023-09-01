@@ -1,46 +1,70 @@
+@use '../../styles/variables' as *;
+
+// Menu container
 .menu {
-  background: rgb(221, 218, 218);
-  // background: #2f302a;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
+  justify-content: space-between;
   position: sticky;
+  padding: 5px 20px;
   top: 0;
   z-index: 1000;
+  transition: background 0.5s ease, box-shadow 0.3s ease;
 
-  .logo {
-    img {
-      width: 40px;
-      display: block;
-      padding: 5px 0;
-    }
-
-    img.scrolled {
-      width: 120px;
-      padding: 0;
-      transition: width 0.5s cubic-bezier(0, 0, 0.2, 1);
-    }
+  &.default {
+    background: transparent;
   }
 
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content:space-around;
-    li {
-      a {
-        color: rgb(0, 0, 0);
-        // color: #ECE6D7;
-        text-decoration: none;
-        padding: 10px 15px;
-        display: block;
+  &.scrolled {
+    // background:  #f4f3ed;
+    background: rgba(255, 255, 255, 0.7); // Ceci rend le fond légèrement blanc tout en conservant une transparence.
 
-        &:hover {
-          color: #6b6a64
-        }
-      }
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+
+  }
+}
+
+// Style du logo
+.menu .logo img {
+  width: 40px;
+  display: block;
+
+  &.scrolled {
+    width: 120px;
+    padding: 0;
+    // transition: width 0.5s cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+// Liste de navigation et style des liens
+.menu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 50px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: #ECE6D7;
+  text-decoration: none;
+  display: block;
+  font-family: $font-family;
+
+  &:hover {
+    color: #6b6a64
+
+  }
+
+  &.scrolled {
+    color: #000000;
+
+    &:hover {
+      color: #6b6a64
     }
   }
 }

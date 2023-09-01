@@ -7,12 +7,20 @@ import scrolledLogo from '../../assets/icons/logo-text.svg';
 export const Menu = () => {
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [menuColor, setMenuColor] = useState('default');
+  const [linksColor, setLinksColor] = useState('default');
+
+  const ScrollTreshold = 90;
 
   const checkScroll = () => {
-    if (window.scrollY >= 90) {
+    if (window.scrollY >= ScrollTreshold) {
       setIsScrolled(true);
+      setMenuColor('scrolled');
+      setLinksColor('scrolled');
     } else {
       setIsScrolled(false);
+      setMenuColor('default');
+      setLinksColor('default');
     }
   };
 
@@ -24,17 +32,16 @@ export const Menu = () => {
   }, []);
 
   return (
-    <nav className="menu">
+    <nav className={`menu ${menuColor}`}>
       <div className="logo">
         <Link to='/'>
           <img src={isScrolled ? scrolledLogo : logo} className={isScrolled ? 'scrolled' : ''} alt="logo" />
         </Link>
       </div>
       <ul>
-        <li><Link to='/sandbox'>SandBox</Link></li>
-        <li><Link to='/projects'>Mes Projets</Link></li>
-        <li><Link to='/skills'>Mes compétences</Link></li>
-        <li><Link to='/contact'>Me contacter</Link></li>
+        <li><Link to='/projects' className={linksColor}>Mes Projets</Link></li>
+        <li><Link to='/skills' className={linksColor}>Mes compétences</Link></li>
+        <li><Link to='/contact' className={linksColor}>Me contacter</Link></li>
       </ul>
     </nav>
   );

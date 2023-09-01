@@ -15,12 +15,12 @@ export const HeroSection = () => {
           le développement front-end, mais je suis également à l'aise avec le
           back-end.
         </p>
-        <Link to="/projects" className="cta-link">
+        <Link to="/projects" className="cta-link main-button">
           Mes projets
         </Link>
       </div>
       <div className="header-image">
-        <img src={avatar} style={{ width: "1000px"}} alt="avatar" />
+        <img src={avatar} alt="avatar" />
       </div>
     </div>
   );
