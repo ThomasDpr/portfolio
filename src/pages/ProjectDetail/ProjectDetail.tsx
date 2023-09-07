@@ -7,13 +7,11 @@ import "./ProjectDetail.scss";
 
 // Données et composants
 import { projects } from "../../components/Card/CardData";
-import { ProjectLinks } from "./components/ProjectLinks";
-import { ProjectStack } from "./components/ProjectStack";
-// import { ProjectGallery } from "./components/ProjectGallery";
-import { ProjectYoutube } from "./components/ProjectYoutube";
 
 import { Header } from "./components/Sections/Header";
-
+import { Description } from "./components/Sections/Description";
+import { Youtube } from './components/Sections/Youtube';
+import { ProjectGallery } from "./components/Gallery/ProjectGallery";
 
 
 
@@ -28,37 +26,21 @@ export const ProjectDetail = () => {
   if (!project) return <div className="project"><p>Project not found</p></div>;
 
   // Si le projet existe, on affiche le détail du projet : titre, image, description, liens, stack
-  const { title, imageSrc, description, appLink, githubLink, stack, screenshots } = project;
+  const { title, imageSrc, description, appLink, githubLink, stack, youtube} = project;
 
   return (
     <div className="project">
-      <div className="project-container">
         <Header title={title} imageSrc={imageSrc} />
 
+        <Description
+          description={description}
+          stack={stack}
+          appLink={appLink}
+          githubLink={githubLink}
+        />
 
-        <div className="project-content">
-          <section className="project-description-wrapper">
-            <h2 className="project-description-title">
-              Détail du projet
-            </h2>
-            <p className="project-description-text">{description}</p>
-            <ProjectLinks appLink={appLink} githubLink={githubLink} />
-          </section>
-          <ProjectStack stack={stack} />
-        </div>
-
-
-        <div className="project-content-youtube">
-          <div className="project-youtube-wrapper">
-            <h2 className="project-youtube-title">
-              Vidéo de présentation
-            </h2>
-            <ProjectYoutube youtubeLink={project.youtubeLink} />
-          </div>
-        </div>
-
-
-      </div>
+        <Youtube youtube={youtube} />
+        <ProjectGallery projectId={project.id} />
     </div>
   );
 };

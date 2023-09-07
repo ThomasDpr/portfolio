@@ -1,0 +1,57 @@
+@use "../../../../styles/variables.scss" as *;
+
+@mixin container-styles {
+  background-color: $bg-section-light;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+//> Component : [ Stacks du projet ]
+.project-stack {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  // Titre du container des stacks
+  .project-stack__title {
+      font-family: $main-font;
+      font-size: 24px;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      -webkit-text-stroke: 1px $main-color;
+      -webkit-text-fill-color: $main-color;
+      font-weight: 800;
+      @include container-styles;
+  }
+
+  // Container de la liste des stacks
+  .project-stack__list {
+    @include container-styles;
+    height: 100%;
+    // padding-left: 2em;
+    // list-style: disc;
+    // color: $main-color;
+
+    // Item de la liste des stacks
+    .project-stack__item {
+      color: $main-color;
+      font-family: $main-font;
+      font-size: 16px;
+      text-align: justify;
+      line-height: 1.75rem;
+      font-weight: 200;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-block: 10px;
+
+      // Icone de chaque stack
+      .project-stack__icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}

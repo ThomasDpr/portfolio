@@ -1,5 +1,4 @@
-
-
+import './Header.scss';
 
 export const Header = ({ title, imageSrc }: { title: string, imageSrc: string }) => (
   <section className="project-header">

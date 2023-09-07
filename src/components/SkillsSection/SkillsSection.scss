@@ -1,0 +1,258 @@
+@use '../../styles/variables' as *;
+
+$BORDURE-CONTAINER-PARENT: 2px solid #ff0000;
+$BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
+
+// Container parent pour "Skills"
+.skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-height: 100vh;
+  height: calc(100vh - 80px);
+  width: 100%;
+
+
+  // Styles pour les sections "Frontend" et "Backend"
+  .frontend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    height: 100%;
+    width: 100%;
+  }
+  .backend {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 20px 20px 20px 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  // Styles pour les titres "Frontend" et "Backend"
+  .skills-frontend__title,
+  .skills-backend__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100%;
+    text-transform: uppercase;
+    font-size: 48px;
+    font-family: $main-font;
+    -webkit-text-stroke: 1px #ECE6D7;
+    -webkit-text-fill-color: transparent;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+  .skills-frontend__title {
+    border-left: 3px dashed #ECE6D7;
+  }
+
+  .skills-backend__title {
+    border-right: 3px dashed #ECE6D7;
+  }
+
+  // Style unique pour la section "Frontend"
+  .skills-frontend {
+    // margin-right: 20px;
+    border-radius: 20px 20px 20px 20px;
+    // border: 2px solid #ECE6D7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url('../../assets/images/avatar-left.png'), linear-gradient(to left, rgb(223, 176, 166), rgba(0,0,0,0));
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  // Style unique pour la section "Backend"
+  .skills-backend {
+    // margin-left: 20px;
+    border-radius: 20px 20px 20px 20px;
+    // border: 2px solid #ECE6D7;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #757575;
+    background: url('../../assets/images/avatar-right.png'), linear-gradient(to right, rgb(117, 117, 117), rgba(0,0,0,0));
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  // Styles pour le container des items "Frontend" et "Backend"
+  .skills-frontend__item__container {
+    @media (max-width: 1325px) {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      // height: 100%;
+      width: 100%;
+      margin-left: 20px;
+    }
+    @media (max-width: 988px) {
+      display: flex;
+      flex-direction: row;
+      align-items: start;
+      justify-content: center;
+      // height: 100%;
+      width: 100%;
+      margin-left: 20px;
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    // height: 100%;
+    width: 100%;
+    margin-left: 20px;
+
+
+    .skills-frontend__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100px;
+      height: 100px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  .skills-backend__item__container {
+    @media (max-width: 1325px) {
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      justify-content: center;
+      // height: 100%;
+      width: 100%;
+      margin-right: 20px;
+    }
+
+    @media (max-width: 988px) {
+      display: flex;
+      flex-direction: row;
+      align-items: end;
+      justify-content: center;
+      // height: 100%;
+      width: 100%;
+      margin-right: 20px;
+    }
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    // height: 100%;
+    width: 100%;
+    margin-right: 20px;
+
+
+    // Styles pour les items "Frontend" et "Backend"
+    .skills-backend__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 100px;
+      height: 100px;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  // Styles pour les icônes des stacks
+  .skills-frontend__icon,
+  .skills-backend__icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      filter: contrast(2);
+    }
+  }
+
+  // Styles pour les textes des stacks
+  .skills-frontend__text,
+  .skills-backend__text {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: $main-font;
+    color: #ECE6D7;
+  }
+
+  // Border pour les stacks "Frontend" et "Backend"
+  #react {
+    border: 2px solid #61DBFB;
+  }
+  #javascript {
+    border: 2px solid #fed602;
+  }
+  #typescript {
+    border: 2px solid #3178C6;
+  }
+  #rails {
+    border: 2px solid #ff0000;
+  }
+  #ruby {
+    border: 2px solid #e53834;
+  }
+  #nestjs {
+    border: 2px solid #f50157;
+  }
+}
+
+
+// Styles pour le container du titre "Compétences"
+.skills-title__center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+// Styles pour les lettres du titre "Compétences"
+.skills-title__center__letter {
+  display: block;
+  margin-block: -5px;
+  font-size: 48px;
+  font-family: $main-font;
+  -webkit-text-stroke: 1px #ECE6D7;
+  -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 988px) {
+  .skills {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skills-title__center {
+    order: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    // padding: 20px;
+    // width: 100%;
+  }
+
+  .frontend, .backend {
+    order: 1;
+  }
+}
