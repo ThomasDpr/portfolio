@@ -10,6 +10,7 @@
   padding-inline: 72px;
   color: $main-color;
   z-index: 1000;
+
 }
 
 .navbar__links {
@@ -44,10 +45,10 @@
     bottom: 0;
     width: 0;
     height: 100vh;
-    padding: 32px;
     visibility: hidden;
-    background-color: black;
-    transition: all 0.8s ease-out;
+    backdrop-filter: blur(20px);
+    background-color: rgba(24, 24, 31, 0.8);
+    transition: all 0.4s ease-out;
   }
 
 
