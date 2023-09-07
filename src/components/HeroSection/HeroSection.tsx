@@ -1,7 +1,6 @@
 import React from "react";
 import "./HeroSection.scss";
 import avatar from "../../assets/images/avatar-header.png";
-import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
