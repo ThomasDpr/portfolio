@@ -3,14 +3,17 @@ import React, { useState, useEffect } from 'react';
 import './Menu.scss';
 import logo from '../../assets/icons/logo-symbol.svg';
 import scrolledLogo from '../../assets/icons/logo-text.svg';
+import hamburger from '../../assets/icons/hamburger.svg';
 
 export const Menu = () => {
+
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuColor, setMenuColor] = useState('default');
   const [linksColor, setLinksColor] = useState('default');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const ScrollTreshold = 90;
+  const ScrollTreshold = 50;
 
   const checkScroll = () => {
     if (window.scrollY >= ScrollTreshold) {
