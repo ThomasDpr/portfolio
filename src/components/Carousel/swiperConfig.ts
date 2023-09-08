@@ -3,7 +3,7 @@ import {
   Pagination,
   Autoplay,
   Keyboard,
-  FreeMode,
+  // FreeMode,
   EffectCoverflow,
 } from "swiper/modules";
 import { SwiperProps } from "swiper/react";
@@ -15,7 +15,7 @@ export const swiperConfig: SwiperProps = {
     Pagination,
     Autoplay,
     Keyboard,
-    FreeMode,
+    // FreeMode,
     EffectCoverflow,
   ],
   spaceBetween: 71,
@@ -31,10 +31,10 @@ export const swiperConfig: SwiperProps = {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  freeMode:{
-    enabled: true,
-    sticky: true,
-  },
+  // freeMode:{
+  //   enabled: true,
+  //   sticky: true,
+  // },
   centeredSlides: true,
   loop: true,
   loopedSlides: 2,
@@ -63,12 +63,12 @@ export const swiperConfig: SwiperProps = {
     },
   },
 
-  // autoplay: { //Stop on focus:
-  //   delay: 2500,
-  //   pauseOnMouseEnter: true,
-  //   disableOnInteraction: false,
-  //   waitForTransition: true,
-  //  },
+  autoplay: { //Stop on focus:
+    delay: 2500,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
+    waitForTransition: true,
+   },
 
 // Ceci sera a remettre dans les imports du ficher Carousel.tsx si il y a un problème:
 // import "swiper/scss/navigation";
