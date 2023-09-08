@@ -1,6 +1,6 @@
 import React from 'react'
 import './Links.scss'
-import avatarVideo from '../../assets/movies/avatar-emoji.mp4';
+import avatarVideo from '../../assets/movies/memoji.mp4';
 
 import githubIcon from '../../assets/icons/github.svg'
 import linkedinIcon from '../../assets/icons/linkedin.svg'
