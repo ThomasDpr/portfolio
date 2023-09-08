@@ -6,6 +6,8 @@ import { Home } from './pages/Home/Home';
 import { Projects } from './pages/Projects/Projects';
 import { ProjectDetail } from './pages/ProjectDetail/ProjectDetail';
 import { Error } from './pages/Error/Error';
+
+import { Footer } from './components/Footer/Footer';
 import './App.scss';
 
 const App = () => {
@@ -21,6 +23,7 @@ const App = () => {
           <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="*" element={<Error />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
