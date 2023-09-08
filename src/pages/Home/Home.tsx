@@ -3,6 +3,7 @@ import { HeroSection } from '../../components/HeroSection/HeroSection';
 import { Banner } from '../../components/Banner/Banner';
 import { ProjectSection } from '../../components/ProjectsSection/ProjectSection';
 import { SkillsSection } from '../../components/SkillsSection/SkillsSection';
+import { Links } from '../../components/Links/Links';
 import './Home.scss';
 
 export const Home = () => {
@@ -12,6 +13,7 @@ export const Home = () => {
       <Banner />
       <ProjectSection />
       <SkillsSection />
+      <Links />
     </div>
   );
 }
