@@ -22,6 +22,8 @@ $BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
     border-radius: 20px 20px 20px 20px;
     height: 100%;
     width: 100%;
+
+
   }
   .backend {
     display: flex;
@@ -46,6 +48,10 @@ $BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
     -webkit-text-fill-color: transparent;
     writing-mode: vertical-rl;
     transform: rotate(180deg);
+
+    @media (max-width: 988px) {
+      // font-size: 36px;
+    }
   }
   .skills-frontend__title {
     border-left: 3px dashed #ECE6D7;

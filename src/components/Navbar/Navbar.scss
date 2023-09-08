@@ -15,6 +15,7 @@
 
 .navbar__links {
   display: flex;
+
 }
 
 .navbar__link {
@@ -22,6 +23,7 @@
   color: $main-color;
   font-family: $main-font;
   font-size: 16px;
+
 }
 
 .navbar__burger {
@@ -49,6 +51,7 @@
     backdrop-filter: blur(20px);
     background-color: rgba(24, 24, 31, 0.8);
     transition: all 0.4s ease-out;
+
   }
 
 
@@ -56,11 +59,13 @@
     width: 100vw;
     right: 0;
     visibility: visible;
+
   }
   .navbar__link {
     display: block;
     padding: 24px;
     font-size: 5vw;
+
   }
   .navbar__burger {
     width: 32px;
