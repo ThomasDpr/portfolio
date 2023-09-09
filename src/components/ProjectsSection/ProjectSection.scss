@@ -9,6 +9,11 @@ $main-font: "Poppins", sans-serif;
   align-items: center;              // Centre les éléments verticalement
   height: 100vh;                    // Défini la hauteur de la section à 100% de la hauteur de l'écran
 
+  @media (max-width: 768px) {
+    flex-direction: column;         // Défini la direction des éléments sur une colonne
+    gap: 20px;                      // Défini l'espace entre les éléments
+  }
+
   // Stylisation commune des sections de titre
   .title-left, .title-right{
     display: flex;
@@ -17,6 +22,13 @@ $main-font: "Poppins", sans-serif;
     writing-mode: vertical-rl;      // Affiche le texte verticalement
     transform: rotate(180deg);      // Inverse le sens du texte pour qu'il soit affiché de gauche à droite
     height: 350px;                  // Défini la hauteur des titres
+    text-wrap: nowrap;                // Empêche le texte de se couper sur plusieurs lignes
+
+    @media (max-width: 768px) {
+      height: 0;                // Défini la hauteur des titres
+      writing-mode: horizontal-tb;  // Affiche le texte horizontalement
+      transform: rotate(0deg);      // Inverse le sens du texte pour qu'il soit affiché de gauche à droite
+    }
 
     // Stylisation des titres
     > h2 {
@@ -32,15 +44,24 @@ $main-font: "Poppins", sans-serif;
   // Stylisation spécifique de la section de titre de gauche
   .title-left {
     border-left: 3px dashed #ECE6D7;                   // Défini la bordure gauche du titre
+
+    @media (max-width: 768px) {
+      border-left: none;                                // Supprime la bordure gauche du titre
+    }
   }
   // Stylisation spécifique de la section de titre de droite
   .title-right {
     border-right: 3px dashed #ECE6D7;                  // Défini la bordure droite du titre
+
+    @media (max-width: 768px) {
+      border-right: none;                               // Supprime la bordure droite du titre
+      margin-top: 20px;                                 // Défini la marge haute du titre
+    }
   }
 
   // Stylisation de la section carousel
   .carousel-section {
-    width: 100%;                                              // Défini la largeur de la section à 100% de la largeur de l'écran
+    width: 100%;                                              // Défini la largeur de la section à 100% de la largeur de l'écran    display: flex;    justify-content: center;                                  // Centre les éléments horizontalement    align-items: center;                                      // Centre les éléments verticalement    margin: 20px;                                           // Défini la marge de la section
     overflow: hidden;                                         // Cache le contenu qui dépasse de la section
   }
 }

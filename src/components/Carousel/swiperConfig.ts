@@ -18,8 +18,7 @@ export const swiperConfig: SwiperProps = {
     // FreeMode,
     EffectCoverflow,
   ],
-  spaceBetween: 71,
-  slidesPerView: 3,
+
   // grabCursor: true,
   direction: "horizontal",
   keyboard: { enabled: true },
@@ -51,10 +50,10 @@ export const swiperConfig: SwiperProps = {
   breakpoints: {
     10: {
       slidesPerView: 1,
-      spaceBetween: 20,
+      spaceBetween: 80,
     },
     768: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 40,
     },
     1024: {
@@ -63,12 +62,12 @@ export const swiperConfig: SwiperProps = {
     },
   },
 
-  autoplay: { //Stop on focus:
-    delay: 2500,
-    pauseOnMouseEnter: true,
-    disableOnInteraction: false,
-    waitForTransition: true,
-   },
+  // autoplay: { //Stop on focus:
+  //   delay: 2500,
+  //   pauseOnMouseEnter: true,
+  //   disableOnInteraction: false,
+  //   waitForTransition: true,
+  //  },
 
 // Ceci sera a remettre dans les imports du ficher Carousel.tsx si il y a un problème:
 // import "swiper/scss/navigation";
