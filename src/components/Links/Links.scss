@@ -9,7 +9,7 @@
   gap: 32px;
   padding-inline: 72px;
 
-  @media (max-width: 768px) {
+  @include mobile-portrait {
     height: 300px;
 
   }
@@ -24,7 +24,7 @@
   object-position: center;
   border-radius: 50%;
 
-  @media (max-width: 768px) {
+  @include mobile-portrait {
     width: 150px;
     height: 150px;
   }
@@ -56,7 +56,7 @@
     object-fit: cover;
     border-radius: 50%;
 
-    @media (max-width: 768px) {
+    @include mobile-portrait {
       width: 48px;
       height: 48px;
     }
@@ -68,7 +68,7 @@
     font-family: $main-font;
     color: $main-color;
 
-    @media (max-width: 768px) {
+    @include mobile-portrait {
       font-size: 16px;
     }
   }

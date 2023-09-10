@@ -10,7 +10,7 @@
   background-size: cover;
   background-position: center;
 
-  @media (max-width: 768px) {
+  @include mobile-portrait {
     height: 300px;
   }
 }

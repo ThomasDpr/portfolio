@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@use '../../styles/variables' as *;
+
 
 // Variables:
-$main-font: "Poppins", sans-serif;
+// $main-font: "Poppins", sans-serif;
 
 .project-section {
   display: flex;
@@ -9,7 +11,7 @@ $main-font: "Poppins", sans-serif;
   align-items: center;              // Centre les éléments verticalement
   height: 100vh;                    // Défini la hauteur de la section à 100% de la hauteur de l'écran
 
-  @media (max-width: 768px) {
+  @include mobile-portrait {
     flex-direction: column;         // Défini la direction des éléments sur une colonne
     gap: 20px;                      // Défini l'espace entre les éléments
   }
@@ -24,7 +26,7 @@ $main-font: "Poppins", sans-serif;
     height: 350px;                  // Défini la hauteur des titres
     text-wrap: nowrap;                // Empêche le texte de se couper sur plusieurs lignes
 
-    @media (max-width: 768px) {
+    @include mobile-portrait {
       height: 0;                // Défini la hauteur des titres
       writing-mode: horizontal-tb;  // Affiche le texte horizontalement
       transform: rotate(0deg);      // Inverse le sens du texte pour qu'il soit affiché de gauche à droite
@@ -45,7 +47,7 @@ $main-font: "Poppins", sans-serif;
   .title-left {
     border-left: 3px dashed #ECE6D7;                   // Défini la bordure gauche du titre
 
-    @media (max-width: 768px) {
+    @include mobile-portrait {
       border-left: none;                                // Supprime la bordure gauche du titre
     }
   }
@@ -53,7 +55,7 @@ $main-font: "Poppins", sans-serif;
   .title-right {
     border-right: 3px dashed #ECE6D7;                  // Défini la bordure droite du titre
 
-    @media (max-width: 768px) {
+    @include mobile-portrait {
       border-right: none;                               // Supprime la bordure droite du titre
       margin-top: 20px;                                 // Défini la marge haute du titre
     }
