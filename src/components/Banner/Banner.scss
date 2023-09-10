@@ -22,15 +22,20 @@
       height: 100%;
       display: flex;
       align-items: center;
+      border-left: 3px dashed white;
+      padding-inline: 40px;
+
+      &__icon { //(svg)
+        width: 32px;
+        height: 32px;
+        margin-inline: 10px;
+      }
 
       &__item {
         font-size: 1.5rem;
         font-weight: $font-weight-bold;
         color: $text-color;
-        padding: 0 1rem;
-        border-left: 3px dashed white;
         text-transform: uppercase;
-        margin: 0 40px;
         font-family: $font-family;
         color:white;
       }
