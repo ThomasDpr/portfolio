@@ -3,6 +3,8 @@
 .banner {
   height: 70px;
   background: $banner-bg;
+  user-select: none;
+
 
   &__container {
     height: 100%;
@@ -13,6 +15,8 @@
     overflow: hidden;
     display: flex;
     white-space: nowrap;
+    backdrop-filter: blur(20px);
+    background-color: rgba(24, 24, 31, 0.8);
 
     &__text {
       height: 100%;
@@ -24,10 +28,11 @@
         font-weight: $font-weight-bold;
         color: $text-color;
         padding: 0 1rem;
-        border-left: 3px dashed $text-color;
+        border-left: 3px dashed white;
         text-transform: uppercase;
         margin: 0 40px;
         font-family: $font-family;
+        color:white;
       }
     }
   }

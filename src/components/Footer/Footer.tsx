@@ -12,6 +12,7 @@ import instagramIcon from "../../assets/icons/instagram.svg";
 import twitterIcon from "../../assets/icons/twitter.svg";
 
 export const Footer = () => {
+
   return (
     <footer className="footer">
       <div className="footer__logo">
@@ -28,7 +29,9 @@ export const Footer = () => {
               alt="Adresse"
               className="footer__contact-icon"
             />
-            <p>Nantes, Loire-Atlantique</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Nantes,+Loire-Atlantique" target="_blank" rel="noopener noreferrer">
+              <p>Nantes, Loire-Atlantique</p>
+            </a>
           </div>
           <div className="footer__contact-item">
             <img
@@ -36,11 +39,15 @@ export const Footer = () => {
               alt="Téléphone"
               className="footer__contact-icon"
             />
-            <p>07 70 45 90 03</p>
+            <a href="tel:+33770459003" className="phone-link">
+              <p>07 70 45 90 03</p>
+            </a>
           </div>
           <div className="footer__contact-item">
             <img src={emailIcon} alt="Email" className="footer__contact-icon" />
-            <p>thomasdpr-pro@outlook.com</p>
+            <a href="mailto:thomasdpr-pro@outlook.com" className="email-link">
+              <p>thomasdpr-pro@outlook.com</p>
+            </a>
           </div>
         </div>
       </div>
