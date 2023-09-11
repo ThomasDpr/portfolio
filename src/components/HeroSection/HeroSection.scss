@@ -3,8 +3,8 @@
 .po {
   display: flex;
   flex-direction: column;
-  // height: calc(100vh - 50px); // 50px c'est la hauteur de la navbar (voir le fichier Navbar.scss)
   // justify-content: center;
+  // height: calc(100vh - 50px); // 50px c'est la hauteur de la navbar (voir le fichier Navbar.scss)
 }
 
 .header {
@@ -13,6 +13,7 @@
   align-items: center;
   padding-inline: 72px;
   // height: 70vh;
+  height: 100%;
   width: 100%;
   // height: 100%;
 
