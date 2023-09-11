@@ -102,7 +102,6 @@ $BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
 
     @include mobile-landscape {
       height: calc(100vh - 100px);
-      border:2px solid #ff0000;
 
     }
   }

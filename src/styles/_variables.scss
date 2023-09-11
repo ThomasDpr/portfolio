@@ -2,13 +2,13 @@
 
 // Responsive breakpoints
 @mixin mobile-portrait {
-  @media (max-width: 768px) {
+  @media (max-width: 968px) {
     @content;
   }
 }
 
 @mixin mobile-landscape {
-  @media (max-width: 768px) and (orientation: landscape) {
+  @media (max-width: 968px) and (orientation: landscape) {
     @content;
   }
 }
