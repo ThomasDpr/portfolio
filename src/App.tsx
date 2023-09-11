@@ -18,12 +18,15 @@ const App = () => {
       <Router>
         <ScrollToTop />
         <Navbar />
+        <div className="testa">
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/projects/:id" element={<ProjectDetail />} />
           <Route path="*" element={<Error />} />
         </Routes>
+        </div>
         <Footer />
       </Router>
     </div>

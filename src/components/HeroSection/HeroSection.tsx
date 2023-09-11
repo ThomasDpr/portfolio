@@ -1,9 +1,12 @@
 import React from "react";
 import "./HeroSection.scss";
 import avatar from "../../assets/images/avatar-header.png";
+import { Banner } from "../Banner/Banner";
 
 export const HeroSection = () => {
   return (
+
+<div className="po">
     <header className="header">
 
       <section className="header__text">
@@ -22,5 +25,7 @@ export const HeroSection = () => {
       </figure>
 
     </header>
+    <Banner />
+    </div>
   );
 };
