@@ -22,8 +22,9 @@
       height: 100%;
       display: flex;
       align-items: center;
-      border-left: 3px dashed white;
+      border-left: 3px dashed $main-color;
       padding-inline: 40px;
+
 
       &__icon { //(svg)
         width: 32px;
@@ -32,12 +33,11 @@
       }
 
       &__item {
-        font-size: 1.5rem;
-        font-weight: $font-weight-bold;
-        color: $text-color;
+        font-size: 24px;
+        font-weight: 400;
+        font-family: $main-font;
         text-transform: uppercase;
-        font-family: $font-family;
-        color:white;
+        color: $main-color;
       }
     }
   }

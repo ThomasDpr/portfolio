@@ -2,18 +2,22 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import "./Banner.scss";
 
-import code from "../../assets/icons/code.svg";
-import responsive from "../../assets/icons/responsive.svg";
-import performance from "../../assets/icons/performance.svg";
-import webDesign from "../../assets/icons/web-design.svg";
+import brush from "../../assets/icons/brush.svg";
+import book from "../../assets/icons/book.svg";
+import binoculars from "../../assets/icons/binoculars.svg";
+import heart from "../../assets/icons/heart.svg";
+import medal from "../../assets/icons/medal.svg";
+import gears from "../../assets/icons/gears.svg";
 
 export const Banner = () => {
 
   const items = [
-    { text: "Clean Code", icon: code },
-    { text: "Responsive Design", icon: responsive },
-    { text: "Optimisation de la performance web", icon: performance },
-    { text: "Intérêt pour le Design UX/UI", icon: webDesign },
+    { text: "Creatif", icon: brush },
+    { text: "Autodidacte", icon: book },
+    { text: "Curieux", icon: binoculars },
+    { text: "Passionné", icon: heart },
+    { text: "Autonome", icon: medal },
+    { text: "Rigoureux", icon: gears },
   ];
 
   const marqueeProps = {
