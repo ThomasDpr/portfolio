@@ -27,4 +27,12 @@ export const swiperConfigScreen: SwiperProps = {
   },
   loop: true,
   speed: 500,
+  breakpoints: {
+    10: {
+      direction: 'horizontal',
+    },
+    968: {
+      direction: 'vertical',
+    },
+  },
 };
