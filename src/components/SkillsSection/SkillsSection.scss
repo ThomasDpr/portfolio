@@ -12,7 +12,6 @@ $BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
   // max-height: 100vh;
   height: calc(100vh - 100px);
   width: 100%;
-  // border:2px solid #ff0000;
 
   @include mobile-landscape {
     height: auto;
@@ -27,7 +26,6 @@ $BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
     border-radius: 20px 20px 20px 20px;
     height: 100%;
     width: 100%;
-
 
   }
   .backend {
@@ -80,6 +78,10 @@ $BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
     background-size: contain, cover;
     height: 100%;
     width: 100%;
+
+    @include mobile-landscape {
+      height: calc(100vh - 100px);
+    }
   }
 
   // Style unique pour la section "Backend"
@@ -97,6 +99,12 @@ $BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
     background-size: contain, cover;
     height: 100%;
     width: 100%;
+
+    @include mobile-landscape {
+      height: calc(100vh - 100px);
+      border:2px solid #ff0000;
+
+    }
   }
 
   // Styles pour le container des items "Frontend" et "Backend"
@@ -106,7 +114,6 @@ $BORDURE-CONTAINER-ENFANT: 2px solid #0000ff;
       flex-direction: column;
       align-items: start;
       justify-content: center;
-      // height: 100%;
       width: 100%;
       margin-left: 20px;
     }
