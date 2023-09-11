@@ -1,4 +1,4 @@
-@use "../../../../styles/variables.scss" as *;
+@use '../../../../styles/variables' as *;
 
 @mixin container-styles {
   background-color: $bg-section-light;
@@ -16,17 +16,26 @@
   border-radius: 20px;
   gap: 20px;
 
+  @include mobile-portrait {
+    gap: 40px;
+  }
+
 
   // Wrapper du container (contient le titre et la description)
   .project-description__block {
     display: flex;
     gap: 40px;
 
+    @include mobile-portrait {
+      flex-direction: column;
+    }
+
     // Container
     .project-description__content {
       display: flex;
       flex-direction: column;
       gap: 20px;
+
 
       // Titre du container
       .project-description__title {
@@ -51,6 +60,11 @@
         font-weight: 200;
         @include container-styles;
 
+        @include mobile-portrait {
+          font-size: 16px;
+          line-height: 1.85rem;
+          hyphens: auto;
+        }
       }
     }
   }

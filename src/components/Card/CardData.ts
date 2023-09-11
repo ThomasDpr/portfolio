@@ -28,7 +28,7 @@ export const projects = [
     id: "musicroad",
     title: "MusicRoad",
     imageSrc: musicroad,
-    description: "MusicRoad est une application web qui permet de rechercher des festivals de musique en France. L'utilisateur peut rechercher un festival par nom, par ville ou par département. Il peut également rechercher un évènnement par dates. L'application affiche les résultats sur une carte et permet de les trier par distance par rapport à l'utilisateur. L'utilisateur peut également créer un compte et sauvegarder ses festivals favoris pour ensuite chatter dans différents canaux de conversations avec les utilisateurs.",
+    description: "MusicRoad est une application web qui permet de rechercher des festivals de musique en France. L'utilisateur peut rechercher un festival par nom, par ville ou par département. Il peut également rechercher un évènement par dates. L'application affiche les résultats sur une carte et permet de les trier par distance par rapport à l'utilisateur. L'utilisateur peut également créer un compte et sauvegarder ses festivals favoris pour ensuite chatter dans différents canaux de conversations avec les utilisateurs.",
     shortDescription: "MusicRoad est une application web qui permet de rechercher des festivals de musique en France.",
     iconSrc: rails,
     stack: [

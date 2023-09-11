@@ -12,6 +12,10 @@
   display: flex;
   border-radius: 20px;
   gap: 40px;
+  @include mobile-portrait {
+    flex-direction: column;
+    gap: 20px;
+  }
 
   // Lien du projet
   .project-link {

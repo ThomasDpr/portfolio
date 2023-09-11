@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import { projects } from "../../../../components/Card/CardData";
 import { swiperConfigScreen } from "./swiperConfigScreen";
