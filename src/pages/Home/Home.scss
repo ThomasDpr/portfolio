@@ -3,7 +3,7 @@
 .home {
   display: flex;
   flex-direction: column;
-  // border:2px solid #7300ff;
+  // border: 2px solid #7300ff;
 
   @include mobile-landscape {
     gap: 100px;

@@ -45,8 +45,6 @@ export const Projects = () => {
     );
   }
 
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
 
 
   return (
