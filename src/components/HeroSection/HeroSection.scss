@@ -3,13 +3,11 @@
 .po {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   min-height: calc(100vh - 100px);
   width: 100vw;
-  border:$debug;
 
   @include mobile-landscape {
-    height: auto;
   }
 
   @include mobile-portrait {
