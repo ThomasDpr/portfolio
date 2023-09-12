@@ -7,6 +7,7 @@ import { Links } from '../../components/Links/Links';
 import './Home.scss';
 
 export const Home = () => {
+
   return (
     <div className="home">
       <HeroSection />
