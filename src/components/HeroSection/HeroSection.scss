@@ -7,9 +7,7 @@
   // min-height: calc(100vh - 100px);
   width: 100vw;
   height: 100vh;
-  // height: calc(100vh - 100px);
   border: 2px solid magenta;
-  padding-top: 50px;
 
   @include mobile-landscape {
   }
