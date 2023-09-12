@@ -3,4 +3,5 @@ export interface CardProps {
   imageSrc: string;
   shortDescription?: string;
   iconSrc: string;
+  variant?: 'default' | 'projects';
 }

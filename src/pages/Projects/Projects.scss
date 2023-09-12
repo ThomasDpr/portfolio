@@ -2,9 +2,7 @@
 
 .projects{
   display: flex;
-  // align-items: center;
   gap: 40px;
-  margin-top: 40px;
   margin-inline: 80px;
 
   .projects__filters {
@@ -37,8 +35,11 @@
     background-color: rgba(57, 57, 57, 0.5);
     padding: 20px;
     border-radius: 20px;
-    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
-    
+    grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
   }
+}
+
+.card__projects {
+  height: 300px;
 }

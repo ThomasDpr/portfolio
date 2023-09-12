@@ -22,6 +22,10 @@
     overflow: hidden;
     border-radius: 20px;
 
+    @include mobile-portrait {
+      max-height: 100%;
+    }
+
 
     .swiper-slide-screen {
       border-radius: 20px;

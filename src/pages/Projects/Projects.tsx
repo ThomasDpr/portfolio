@@ -45,6 +45,9 @@ export const Projects = () => {
     );
   }
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+
 
   return (
     <div className="projects">
@@ -66,8 +69,8 @@ export const Projects = () => {
       <div className="projects__cards">
         {/* Ici nous parcourons tous les projets filtrés les affichons à l'aide du composant Card */}
         {FilteredProjects().map((project, index) => (
-          <Link to={`/projects/${project.id}`} key={index}>
-            <Card {...project} />
+          <Link to={`/projects/${project.id}`} key={index} className="projects__cards__link">
+            <Card {...project} variant="projects" />
           </Link>
         ))}
       </div>
