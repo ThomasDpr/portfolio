@@ -2,12 +2,13 @@
 
 .links-container {
   width: 100%;
-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
   padding-inline: 72px;
+  border: 2px solid yellow;
 
   @include mobile-portrait {
     // height: 300px;
