@@ -1,11 +1,11 @@
 @use '../../styles/variables' as *;
 
 .home {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   // border: 2px solid #7300ff;
 
   @include mobile-landscape {
-    gap: 100px;
+    // gap: 100px;
   }
 }

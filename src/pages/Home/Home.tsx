@@ -12,9 +12,9 @@ export const Home = () => {
     <div className="home">
       <HeroSection />
       {/* <Banner /> */}
-      <ProjectSection />
+      {/* <ProjectSection />
       <SkillsSection />
-      <Links />
+      <Links /> */}
     </div>
   );
 }

@@ -7,7 +7,6 @@
   // min-height: calc(100vh - 100px);
   width: 100vw;
   height: 100vh;
-  border: 2px solid magenta;
 
   @include mobile-landscape {
   }
@@ -42,7 +41,6 @@
     font-family: $main-font;
     color: $main-color;
     height: 100%;
-    border: 2px solid blue;
 
     @include mobile-portrait {
       width: 100%;
@@ -95,7 +93,6 @@
   }
 
   &__image {
-    border: 2px solid green;
     width: 30%;
     height: 100%;
     display: flex;

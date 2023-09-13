@@ -13,7 +13,6 @@
   justify-content: center;          // Centre les éléments horizontalement
   align-items: center;              // Centre les éléments verticalement
   height: calc(100vh - 100px);
-  // border:2px solid #ff0000;
 
 
   @include mobile-portrait {
