@@ -3,13 +3,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
-
 }
 
 body, html {
   overflow-x: hidden;
-
 }
 
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
@@ -28,12 +25,10 @@ body {
   // background-color: #17181f;
 }
 
-
 #root, .App {
-  min-height: 100vh; /* Prend au minimum toute la hauteur de la fenêtre de visualisation */
-  width: 100vw;      /* Prend toute la largeur de la fenêtre de visualisation */
+  min-height: 100vh;
+  width: 100vw;
 }
-
 
 ol, ul {
   list-style: none;
