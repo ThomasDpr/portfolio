@@ -5,6 +5,10 @@
   background: $banner-bg;
   user-select: none;
 
+  @include mobile-landscape {
+    height: 20%;
+  }
+
 
   &__container {
     height: 100%;
