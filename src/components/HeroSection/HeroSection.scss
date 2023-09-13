@@ -3,9 +3,10 @@
 .po {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: calc(100vh - 50px); /* 100vh est la hauteur totale de l'écran et 50px est la hauteur de la navbar */
+  // justify-content: center;
   width: 100vw;
+  padding-top: 50px; /* La hauteur de votre navbar */
+  height: calc(100vh - 50px);
   border:2px solid red;
 
   @include mobile-landscape {
