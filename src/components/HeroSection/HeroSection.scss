@@ -4,9 +4,7 @@
   display: flex;
   flex-direction: column;
   padding-top: 50px; /* La hauteur de votre navbar */
-  // height: 100vh;
   height: calc(100vh - 50px);
-  border: $debug;
 }
 
 .header {
@@ -14,6 +12,7 @@
   padding-inline: 72px;
   width: 100%;
   height: 90%;
+  overflow: hidden;
 
   @include mobile-portrait {
     flex-direction: column;
