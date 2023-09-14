@@ -1,20 +1,11 @@
 // @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @use '../../styles/variables' as *;
 
-// display: flex;
-// flex-direction: column;
-// justify-content: center;
-// height: calc(100vh - 100px);
-// Variables:
-// $main-font: "Poppins", sans-serif;
-
 .project-section {
   display: flex;
   justify-content: center;          // Centre les éléments horizontalement
   align-items: center;              // Centre les éléments verticalement
-  // height: calc(100vh - 100px);
-  height: 100vh;
-
+  height: calc(100vh - 50px);
 
   @include mobile-portrait {
     flex-direction: column;         // Défini la direction des éléments sur une colonne
@@ -22,7 +13,7 @@
   }
 
   @include mobile-landscape {
-    height: auto;
+    height: 100%;
   }
 
   // Stylisation commune des sections de titre
@@ -33,10 +24,10 @@
     writing-mode: vertical-rl;      // Affiche le texte verticalement
     transform: rotate(180deg);      // Inverse le sens du texte pour qu'il soit affiché de gauche à droite
     height: 350px;                  // Défini la hauteur des titres
-    text-wrap: nowrap;                // Empêche le texte de se couper sur plusieurs lignes
+    text-wrap: nowrap;              // Empêche le texte de se couper sur plusieurs lignes
 
     @include mobile-portrait {
-      height: 0;                // Défini la hauteur des titres
+      height: auto;                // Défini la hauteur des titres
       writing-mode: horizontal-tb;  // Affiche le texte horizontalement
       transform: rotate(0deg);      // Inverse le sens du texte pour qu'il soit affiché de gauche à droite
     }
@@ -46,7 +37,6 @@
       text-transform: uppercase;                              // Transforme le texte en majuscule
       font-size: 48px;                                        // Défini la taille de la police
       font-family: $main-font;                                // Défini la police de caractère
-      // -webkit-text-stroke: 1px rgb(0, 0, 0);                // Défini la couleur de la bordure du texte
       -webkit-text-stroke: 1px #ECE6D7;                // Défini la couleur de la bordure du texte
       -webkit-text-fill-color: transparent;                   // Défini la couleur de remplissage du texte
     }
@@ -67,6 +57,7 @@
     @include mobile-portrait {
       border-right: none;                               // Supprime la bordure droite du titre
       margin-top: 20px;                                 // Défini la marge haute du titre
+
     }
   }
 

@@ -12,6 +12,7 @@ import rails from "../../assets/icons/rails.svg";
 import nestjs from "../../assets/icons/nestjs.svg";
 
 export const SkillsSection = () => {
+
   return (
       <div className="skills">
         <div className="frontend">
