@@ -5,7 +5,7 @@ import { Banner } from "../Banner/Banner";
 
 export const HeroSection = () => {
   return (
-    <div className="po">
+    <div className="hero-section">
       <header className="header">
         <section className="header__text">
           <h1 className="header__text__title">Thomas Dupré</h1>

@@ -1,9 +1,8 @@
 @use "../../styles/variables" as *;
 
-.po {
+.hero-section {
   display: flex;
   flex-direction: column;
-  // padding-top: 50px; /* La hauteur de votre navbar */
   height: calc(100vh - 50px);
 }
 
@@ -13,6 +12,7 @@
   width: 100%;
   height: 90%;
   overflow: hidden;
+
 
   @include mobile-portrait {
     flex-direction: column;
