@@ -37,7 +37,7 @@ export const Banner = () => {
         <Marquee {...marqueeProps} gradientColor={[0,0,0]}>
             {items.map((item, index) => (
           <div className="banner__container__text" key={index}>
-              <img className="banner__container__text__icon" src={item.icon} alt="icon" />
+              <img className="banner__container__text__icon" src={item.icon} alt={item.text + " icon"} />
               <span className="banner__container__text__item">
                 {item.text}
               </span>

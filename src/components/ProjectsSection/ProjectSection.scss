@@ -14,7 +14,6 @@
   align-items: center;              // Centre les éléments verticalement
   // height: calc(100vh - 100px);
   height: 100vh;
-  border:2px solid green;
 
 
   @include mobile-portrait {

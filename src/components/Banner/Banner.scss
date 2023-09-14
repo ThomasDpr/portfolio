@@ -5,6 +5,10 @@
   background: $banner-bg;
   user-select: none;
 
+  @include mobile-portrait {
+    height: 10%;
+  }
+
   @include mobile-landscape {
     height: 20%;
   }
@@ -22,6 +26,8 @@
     backdrop-filter: blur(20px);
     background-color: rgba(24, 24, 31, 0.8);
 
+
+
     &__text {
       height: 100%;
       display: flex;
@@ -29,19 +35,20 @@
       border-left: 3px dashed $main-color;
       padding-inline: 40px;
 
-
-      &__icon { //(svg)
+      &__icon {
         width: 32px;
         height: 32px;
         margin-inline: 10px;
+
       }
 
       &__item {
-        font-size: 24px;
+        color: $main-color;
+        font-size: 1.5rem;
         font-weight: 400;
         font-family: $main-font;
         text-transform: uppercase;
-        color: $main-color;
+
       }
     }
   }

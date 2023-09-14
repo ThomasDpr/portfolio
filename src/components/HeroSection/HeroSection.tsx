@@ -6,6 +6,8 @@ import { Banner } from "../Banner/Banner";
 export const HeroSection = () => {
   return (
     <div className="hero-section">
+          <div className="torch"></div>
+
       <header className="header">
         <section className="header__text">
           <h1 className="header__text__title">Thomas Dupré</h1>
