@@ -62,12 +62,12 @@ export const swiperConfig: SwiperProps = {
     },
   },
 
-  // autoplay: { //Stop on focus:
-  //   delay: 2500,
-  //   pauseOnMouseEnter: true,
-  //   disableOnInteraction: false,
-  //   waitForTransition: true,
-  //  },
+  autoplay: { //Stop on focus:
+    delay: 2500,
+    pauseOnMouseEnter: true,
+    disableOnInteraction: false,
+    waitForTransition: true,
+   },
 
 // Ceci sera a remettre dans les imports du ficher Carousel.tsx si il y a un problème:
 // import "swiper/scss/navigation";
