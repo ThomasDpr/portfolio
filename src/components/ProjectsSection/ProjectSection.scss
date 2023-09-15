@@ -51,6 +51,8 @@
       font-family: $main-font;                                // Défini la police de caractère
       -webkit-text-stroke: 1px #ECE6D7;                // Défini la couleur de la bordure du texte
       -webkit-text-fill-color: transparent;                   // Défini la couleur de remplissage du texte
+      text-wrap: nowrap;              // Empêche le texte de se couper sur plusieurs lignes
+
     }
   }
 
