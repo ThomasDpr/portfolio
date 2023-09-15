@@ -10,19 +10,12 @@ import "./Carousel.scss";
 
 export const Carousel = () => {
   return (
-    <div className="carousel-container">
       <Swiper {...swiperConfig} className="carousel">
         {projects.map((project, index) => (
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} className="carousel__slides">
             <Card {...project} />
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="swiper-elements-outside">
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-pagination "></div>
-        <div className="swiper-button-next"></div>
-      </div>
-    </div>
   );
 };

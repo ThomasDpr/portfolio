@@ -3,6 +3,7 @@
 .home {
   display: flex;
   flex-direction: column;
+  gap: 100px;
 
   @include mobile-landscape {
     gap: 100px;

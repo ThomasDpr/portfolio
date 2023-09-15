@@ -1,87 +1,20 @@
 @use 'swiper/css/bundle';
 @use '../../styles/variables' as *;
 
-// @import '../../assets/icons/alrepo.svg';
-
-// DIV PARENT DU COMPOSANT CAROUSEL
-.carousel-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.carousel {
   width: 100%;
-  padding-top: 40px;
+  height: 100%;
+  border-radius: 20px;
 
-  @include mobile-portrait {
-    padding: 0;
-  }
+  .carousel__slides {
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+    height: 100%;
 
-  .carousel {
-    width: 100%;
-    padding: 20px;
-
-    .swiper-slide {
-      border-radius: 20px;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
-    }
-  }
-
-  .swiper-elements-outside {
-    display: flex;
-    justify-content: center ;
-    align-items: center;
-
-
-    .swiper-button-prev,
-    .swiper-button-next {
-      // background: rgba(0, 0, 0, 0.8);
-      border-radius: 50%;
-      position: relative;
-      width: 60px;
-      height: 40px;
-      margin: 0;
-      left: 0;
-      right: 0;
-      background-repeat: no-repeat;
-      background-size: 100%;
-      // border: 2px solid rgba(0, 0, 0, 0.8);
-      border: 2px solid #ECE6D7;
-
-      &:after {
-        display: none;
-      }
-
-      &:hover {
-        // border: 2px dotted rgba(0, 0, 0, 0.8);
-        border: 2px dotted #ECE6D7;
-      }
-    }
-    .swiper-pagination {
-      position: static;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-    }
-    .swiper-pagination-bullet {
-      // background-color: rgba(0, 0, 0, 0.8);
-      background-color: #ECE6D7;
-      width: 8px;
-      height: 8px;
-      margin: 0 5px;
-    }
-
-    .swiper-pagination-bullet-active {
-      // background-color: rgba(0, 0, 0, 0.8);
-      background-color: #ECE6D7;
-      width: 10px;
-      height: 10px;
-    }
   }
 }
-.swiper-button-prev {
-  background-image: url(../../assets/icons/arrow-left.svg);
-}
 
-.swiper-button-next {
-  background-image: url(../../assets/icons/arrow-right.svg);
+.swiper-slide-next, .swiper-slide-prev {
+  filter: grayscale(1) blur(5px);
+  transition: all 0.5s ease-in-out !important;
 }
