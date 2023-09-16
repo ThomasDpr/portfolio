@@ -7,7 +7,6 @@
   align-items: center;              // Centre les éléments verticalement
   height: calc(100vh - 50px);
   width: 100vw;
-  border: 2px solid red;
 
   @include mobile-portrait {
     flex-direction: column;         // Défini la direction des éléments sur une colonne
