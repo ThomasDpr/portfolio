@@ -7,7 +7,7 @@ import linkedinIcon from '../../assets/icons/linkedin.svg'
 export const Links = () => {
   return (
     <div className="links-container">
-      <video className="avatar-video" src={avatarVideo} autoPlay loop muted playsInline></video>
+      <video className="avatar-video" src={avatarVideo} autoPlay loop muted playsInline controls={false} controlsList='nodownload' disableRemotePlayback={false}></video>
       <div className="links-items">
         <a
           className="links-item"

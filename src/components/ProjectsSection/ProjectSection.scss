@@ -3,19 +3,21 @@
 
 .project-section {
   display: flex;
-  justify-content: center;          // Centre les éléments horizontalement
+  justify-content: space-between;          // Centre les éléments horizontalement
   align-items: center;              // Centre les éléments verticalement
   height: calc(100vh - 50px);
   width: 100vw;
 
   @include mobile-portrait {
     flex-direction: column;         // Défini la direction des éléments sur une colonne
-    justify-content: space-between;
+    justify-content: center;
+    gap: 50px;
   }
 
   @include mobile-landscape {
     flex-direction: row;            // Défini la direction des éléments sur une ligne``
     justify-content: center;
+    gap: 0px;
   }
 
   // Stylisation commune des sections de titre
