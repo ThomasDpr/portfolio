@@ -1,20 +1,22 @@
-import React from 'react'
+import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Error.scss'
 
-import manlost from '../../assets/images/man-lost.png'
-
 export const Error = () => {
+
+  useEffect(() => {
+    document.title = '404 - Page introuvable'
+  }, [])
+
   return (
-    <div className="error-page">
-      <div className="error-page__container">
-        <span className="error-page__title">404</span>
-        <span className="error-page__subtitle">The page you were looking for doesn't exist.</span>
-        <Link to="/" className="error-page__link">Go to home</Link>
-      </div>
-      <div className="error-page_image">
-        <img src={manlost} alt="man-lost" />
-      </div>
-    </div>
+    <main className="error-page">
+      <header className="error-page__header">
+        <span className="error-page__header__title">404</span>
+        <span className="error-page__header__subtitle">Oups ! Il semblerait que cette page n'existe pas</span>
+      </header>
+      <section className="error-page__section">
+        <Link to="/" className="error-page__section__link">Accueil</Link>
+      </section>
+    </main>
   )
 }

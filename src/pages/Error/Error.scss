@@ -1,64 +1,62 @@
-@use "../../styles/variables.scss" as *;
+@use '../../styles/variables' as *;
 
 .error-page {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #17181f;
-  height: calc(100vh - 50px); // 50px c'est la hauteur du menu
+  flex-direction: column;
+  height: $height-with-navbar;
+  width: 100vw;
+  gap: 40px;
 
-  .error-page__container {
+  &__header {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 20px;
 
-    .error-page__title {
-      font-size: 162px;
+    &__title {
+      font-size: 10rem;
       font-family: $main-font;
-      z-index: 2;
-      -webkit-text-stroke: 1px lightgray;
-      -webkit-text-fill-color: #17181f;
+      -webkit-text-stroke: 1px $main-color;
+      -webkit-text-fill-color: transparent;
+      max-height: 100px;
       display: flex;
-      justify-content: center;
       align-items: center;
-      height: 120px;
+
+      @include mobile-portrait {
+        font-size: 6rem;
+      }
+
+      @include mobile-landscape {
+        font-size: 6rem;
+      }
     }
 
-    .error-page__subtitle {
-      font-size: 20px;
+    &__subtitle {
+      font-size: 1.25rem;
       font-family: $main-font;
-      color: #fff;
-      padding-block: 20px;
+      color: $main-color;
+      text-align: center;
     }
   }
-
-  .error-page_image {
-    bottom: 0;
-    right: 100px;
-    position: absolute;
+  &__section {
     display: flex;
 
-    img {
-      width: 400px;
-      height: 400px;
-      object-fit: cover;
+    &__link {
+      color: $main-color;
+      font-family: $main-font;
+      font-size: 1.25rem;
+      border: 1px solid $main-color;
+      border-radius: 50px;
+      padding: 10px 20px;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $main-color;
+        color: #17181f;
+      }
     }
-  }
-}
-
-.error-page__link {
-  color: #fff;
-  font-size: 20px;
-  border: 1px solid #fff;
-  padding: 10px 20px;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  position: relative; // le bouton sera dans le flux normal du document
-
-  &:hover {
-    background-color: #fff;
-    color: #17181f;
   }
 }
