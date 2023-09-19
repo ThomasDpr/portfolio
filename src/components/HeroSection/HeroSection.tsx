@@ -1,9 +1,6 @@
-import React from "react";
 import "./HeroSection.scss";
 import { Banner } from "../Banner/Banner";
-
-import { AdvancedImage } from "@cloudinary/react";
-import { cld } from "../../utils/cloudinaryConfig";
+import { CloudinaryImage } from "../../utils/CloudinaryImage";
 
 const avatar = "portfolio_react/mslffprpiccmya8urkv0";
 
@@ -24,8 +21,8 @@ export const HeroSection = () => {
         </section>
 
         <figure className="header__image">
-          <AdvancedImage
-            cldImg={cld.image(avatar)}
+          <CloudinaryImage
+            publicId={avatar}
             className="header__image__img"
             alt="Portrait de Thomas Dupré"
           />
