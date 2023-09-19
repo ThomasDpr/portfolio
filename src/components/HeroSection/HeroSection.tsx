@@ -1,15 +1,15 @@
 import React from "react";
 import "./HeroSection.scss";
-// import avatar from "../../assets/images/avatar-thomas1.webp";
 import { Banner } from "../Banner/Banner";
 
 import { AdvancedImage } from "@cloudinary/react";
 import { cld } from "../../utils/cloudinaryConfig";
 
+const avatar = "portfolio_react/mslffprpiccmya8urkv0";
+
 export const HeroSection = () => {
   return (
     <div className="hero-section">
-          <div className="torch"></div>
 
       <header className="header">
         <section className="header__text">
@@ -24,10 +24,10 @@ export const HeroSection = () => {
         </section>
 
         <figure className="header__image">
-          {/* <img src={avatar} alt="Portrait de Thomas Dupré" loading="lazy" /> */}
           <AdvancedImage
-            cldImg={cld.image("portfolio_react/mslffprpiccmya8urkv0")}
+            cldImg={cld.image(avatar)}
             className="header__image__img"
+            alt="Portrait de Thomas Dupré"
           />
         </figure>
       </header>
