@@ -58,21 +58,21 @@ export const Footer = () => {
             href="https://www.facebook.com/thomasdprconnect"
             target="_blank"
             rel="noopener noreferrer">
-            <img src={facebookIcon} alt="Facebook" />
+            <img src={facebookIcon} alt="Logo de Facebook" />
             <span>Facebook</span>
           </a>
           <a
             href="https://www.instagram.com/thomas_dpr/"
             target="_blank"
             rel="noopener noreferrer">
-            <img src={instagramIcon} alt="Instagram" />
+            <img src={instagramIcon} alt="Logo d'Instagram" />
             <span>Instagram</span>
           </a>
           <a
             href="https://twitter.com/thomdpr"
             target="_blank"
             rel="noopener noreferrer">
-            <img src={twitterIcon} alt="Twitter" />
+            <img src={twitterIcon} alt="Logo de Twitter" />
             <span>Twitter</span>
           </a>
         </div>

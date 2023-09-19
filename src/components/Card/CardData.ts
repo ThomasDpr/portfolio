@@ -1,6 +1,6 @@
-import musicroad from '../../assets/images/musicroad/mr_home.png'
-import spacebnb from '../../assets/images/spacebnb/sb_home.png'
-import portfolio from '../../assets/images/portfolio.png'
+import musicroad from '../../assets/images/musicroad/mr_home.webp'
+import spacebnb from '../../assets/images/spacebnb/sb_home.webp'
+import portfolio from '../../assets/images/portfolio.webp'
 
 import rails from '../../assets/icons/rails.svg'
 import react from '../../assets/icons/react.svg'
@@ -8,20 +8,20 @@ import typescript from '../../assets/icons/typescript.svg'
 import postgresql from '../../assets/icons/postgresql.svg'
 import javascript from '../../assets/icons/javascript.svg'
 
-import musicroad_index from '../../assets/images/musicroad/mr_index.png'
-import musicroad_show from '../../assets/images/musicroad/mr_show.png'
-import musicroad_artist from '../../assets/images/musicroad/mr_artist.png'
-import musicroad_chatroom from '../../assets/images/musicroad/mr_chatroom.png'
-import musicroad_favorite from '../../assets/images/musicroad/mr_favorite.png'
-import musicroad_login from '../../assets/images/musicroad/mr_login.png'
-import musicroad_register from '../../assets/images/musicroad/mr_register.png'
+import musicroad_index from '../../assets/images/musicroad/mr_index.webp'
+import musicroad_show from '../../assets/images/musicroad/mr_show.webp'
+import musicroad_artist from '../../assets/images/musicroad/mr_artist.webp'
+import musicroad_chatroom from '../../assets/images/musicroad/mr_chatroom.webp'
+import musicroad_favorite from '../../assets/images/musicroad/mr_favorite.webp'
+import musicroad_login from '../../assets/images/musicroad/mr_login.webp'
+import musicroad_register from '../../assets/images/musicroad/mr_register.webp'
 
-import spacebnb_index from '../../assets/images/spacebnb/sb_index.png'
-import spacebnb_show from '../../assets/images/spacebnb/sb_show.png'
-import spacebnb_booking from '../../assets/images/spacebnb/sb_book.png'
+import spacebnb_index from '../../assets/images/spacebnb/sb_index.webp'
+import spacebnb_show from '../../assets/images/spacebnb/sb_show.webp'
+import spacebnb_booking from '../../assets/images/spacebnb/sb_book.webp'
 
-import elowan from '../../assets/images/elowan.png'
-import gonzague from '../../assets/images/gonzague.png'
+import elowan from '../../assets/images/elowan.webp'
+import gonzague from '../../assets/images/gonzague.webp'
 
 export const projects = [
   {
