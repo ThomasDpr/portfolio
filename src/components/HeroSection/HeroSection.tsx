@@ -1,6 +1,6 @@
 import React from "react";
 import "./HeroSection.scss";
-import avatar from "../../assets/images/avatar-thomas1.webp"
+import avatar from "../../assets/images/avatar-thomas-1.svg";
 import { Banner } from "../Banner/Banner";
 
 export const HeroSection = () => {
