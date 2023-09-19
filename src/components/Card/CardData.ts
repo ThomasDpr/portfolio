@@ -13,8 +13,8 @@ const musicroad_favorite = ('https://res.cloudinary.com/dimfha9hq/image/upload/v
 const musicroad_login = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/login.png')
 const musicroad_register = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/register.png')
 
-const elowan = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/elowan.png')
-const gonzague = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/gonzague.png')
+const elowan = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144483/portfolio_react/projects/musicroad/contributors/elowan.png')
+const gonzague = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/contributors/gonzague.png')
 
 const spacebnb = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144239/portfolio_react/projects/spacebnb/home.png')
 const spacebnb_index = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144239/portfolio_react/projects/spacebnb/index.png')
