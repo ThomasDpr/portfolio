@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
 
+import { Helmet } from 'react-helmet';
+import { projectsTitle } from '../../utils/titles';
+
 // Import des données des projets
 import { projects } from '../../components/Card/CardData'
 // Import du composant Card
@@ -49,6 +52,9 @@ export const Projects = () => {
 
   return (
     <div className="projects">
+      <Helmet>
+        <title>{projectsTitle}</title>
+      </Helmet>
       <div className="projects__filters">
         {stacks.map((stack, index) => (
           <div key={index} className="projects__filters__stacks">

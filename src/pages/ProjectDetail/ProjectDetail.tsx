@@ -1,5 +1,10 @@
 // Modules externes
 import React from "react";
+
+
+import { Helmet } from "react-helmet";
+import { projectDetailTitle } from "../../utils/titles";
+
 import { useParams } from "react-router-dom";
 
 // Styles
@@ -30,6 +35,9 @@ export const ProjectDetail = () => {
 
   return (
     <div className="project">
+      <Helmet>
+        <title>{projectDetailTitle(title)}</title>
+      </Helmet>
         <Header title={title} imageSrc={imageSrc} />
 
         <Description
