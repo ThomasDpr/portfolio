@@ -1,7 +1,10 @@
 import React from "react";
 import "./HeroSection.scss";
-import avatar from "../../assets/images/avatar-thomas1.webp";
+// import avatar from "../../assets/images/avatar-thomas1.webp";
 import { Banner } from "../Banner/Banner";
+
+import { AdvancedImage } from "@cloudinary/react";
+import { cld } from "../../utils/cloudinaryConfig";
 
 export const HeroSection = () => {
   return (
@@ -21,7 +24,11 @@ export const HeroSection = () => {
         </section>
 
         <figure className="header__image">
-          <img src={avatar} alt="Portrait de Thomas Dupré" />
+          {/* <img src={avatar} alt="Portrait de Thomas Dupré" loading="lazy" /> */}
+          <AdvancedImage
+            cldImg={cld.image("portfolio_react/mslffprpiccmya8urkv0")}
+            className="header__image__img"
+          />
         </figure>
       </header>
       <Banner />
