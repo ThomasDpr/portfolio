@@ -68,9 +68,7 @@
         text-align: justify;
         line-height: 1.75rem;
         font-weight: 200;
-        hyphens: auto;
-        overflow:scroll;
-
+        overflow: scroll;
 
         @include mobile-portrait {
           height: 200px;
