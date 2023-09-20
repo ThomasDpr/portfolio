@@ -73,6 +73,10 @@
         @include mobile-portrait {
           height: 200px;
         }
+
+        @include mobile-landscape {
+          font-size: 0.8rem;
+        }
       }
     }
 

@@ -76,6 +76,10 @@
           text-align: justify;
           line-height: 1.75rem;
           font-weight: 200;
+
+          @include mobile-landscape {
+            font-size: 0.8rem;
+          }
         }
 
         .project-youtube__avatars {
