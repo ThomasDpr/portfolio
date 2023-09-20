@@ -30,9 +30,10 @@
   .project-stack__list {
     @include container-styles;
     height: 100%;
-    // padding-left: 2em;
-    // list-style: disc;
-    // color: $main-color;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 
     // Item de la liste des stacks
     .project-stack__item {
@@ -45,7 +46,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      margin-block: 10px;
 
       // Icone de chaque stack
       .project-stack__icon {

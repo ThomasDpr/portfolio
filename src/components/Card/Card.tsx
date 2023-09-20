@@ -1,10 +1,9 @@
-import React from "react";
 import { CardProps } from "./CardType";
 import { Link } from 'react-router-dom';
 
 import "./Card.scss";
 
-export const Card = ({ title, shortDescription, imageSrc, iconSrc, id, variant = 'default' }: CardProps & { id: string }) => {
+export const Card = ({ title, imageSrc, iconSrc, id, variant = 'default' }: CardProps & { id: string }) => {
 
   return (
     <Link to={`/projects/${id}`}>

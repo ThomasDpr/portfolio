@@ -105,25 +105,28 @@ export const projects = [
     iconSrc: rails,
     stack: [
       { name: "Ruby on Rails", icon: rails },
+      { name: "PostgreSQL", icon: postgresql },
     ],
+    githubLink: "https://github.com/EloItsMe/space-bnb",
+    // appLink: "",
     screenshots: [
       {
         id: "spacebnb_index",
         title: "Page de toutes les planètes",
         imageSrc: spacebnb_index,
-        description: "L'application affiche à l'utilisateur toutes les planètes disponibles à la location.",
+        description: "Sur cette page, l'utilisateur peut voir toutes les planètes disponibles à la location. Nous avons intégré une barre de recherche qui permet de filtrer les résultats par nom de planète. L'utilisateur n'a plus qu'à cliquer sur une des planètes pour être redirigé vers la page de détails de la planète.",
       },
       {
         id: "spacebnb_show",
         title: "Page d'une planète",
         imageSrc: spacebnb_show,
-        description: "L'application affiche à l'utilisateur tous les détails d'une planète.",
+        description: "Sur cette page, l'utilisateur peut voir tous les détails d'une planète. On affiche son nom, une description, son prix par jour, sa taille et aussi le nom de son propriétaire. L'utilisateur peut également réserver la planète pour une durée déterminée grâce à un calendrier. Enfin, il peut cliquer sur le bouton 'Booking' pour envoyer une demande de réservation au propriétaire de la planète.",
       },
       {
         id: "spacebnb_booking",
         title: "Page de réservation",
         imageSrc: spacebnb_booking,
-        description: "L'application affiche à l'utilisateur tous les réservations en cours.",
+        description: "Sur cette page, l'utilisateur peut voir toutes les planètes qu'il a réservé. Il à également la possibilité s'il le souhaite d'annuler une réservation. Enfin si l'utilisateur souhaite lui aussi ajouter une de ses planètes en location il n'a qu'à cliquer sur le bouton 'Add your planet' pour être redirigé vers la page de création d'une planète.",
       },
     ]
   },
