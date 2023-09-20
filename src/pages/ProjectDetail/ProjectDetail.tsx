@@ -1,14 +1,7 @@
-// Modules externes
-import React from "react";
-
-
 import { Helmet } from 'react-helmet-async';
 import { projectDetailTitle } from "../../utils/titles";
 
 import { useParams } from "react-router-dom";
-
-// Styles
-import "./ProjectDetail.scss";
 
 // Données et composants
 import { projects } from "../../components/Card/CardData";
@@ -18,6 +11,7 @@ import { Description } from "./components/Sections/Description";
 import { Youtube } from './components/Sections/Youtube';
 import { ProjectGallery } from "./components/Gallery/ProjectGallery";
 
+import "./ProjectDetail.scss";
 
 
 export const ProjectDetail = () => {
