@@ -82,18 +82,17 @@ export const projects = [
         description: "Sur cette page, l'utilisateur peut créer un compte. Il doit renseigner son prénom, son nom, son email, et son mot de passe. Il a également la possibilité d'importer une photo de profil qui sera affichée en direct sur la page. Si l'utilisateur a déjà un compte, il peut cliquer sur le bouton (Se connecter) pour être redirigé vers la page de connexion. Nous avons utiliser la gem Devise pour gérer l'authentification des utilisateurs.",
       },
     ],
-    youtubeLink: "https://www.youtube.com/embed/DHCdl63G2dQ?si=XhNqYWiPjx5yBIXN&amp;controls=0&amp;start=1176",
-    youtube: [
-      {
-        title: "DemoDay - MusicRoad",
-        link: "https://www.youtube.com/embed/DHCdl63G2dQ?si=XhNqYWiPjx5yBIXN&amp;controls=0&amp;start=1176",
-        description: "Le 27 juin 2023, j'ai présenté l'application MusicRoad lors du DemoDay de la formation Le Wagon à Nantes. L'objectif était de présenter au public l'application que mon équipe et moi avions développé pendant 2 semaines durant notre formation. Nous devions répondre à une problèmatique, et déterminer la clible d'utilisateurs tout en présetant les  différentes fonctionnalités de l'application.",
-        collaborators: [
-          { name: "Elowan", avatar: elowan },
-          { name: "Gonzague", avatar: gonzague },
-        ]
-      },
-    ]
+    // youtube: [
+    //   {
+    //     title: "DemoDay - MusicRoad",
+    //     link: "https://www.youtube.com/embed/DHCdl63G2dQ?si=XhNqYWiPjx5yBIXN&amp;controls=0&amp;start=1176",
+    //     description: "Le 27 juin 2023, j'ai présenté l'application MusicRoad lors du DemoDay de la formation Le Wagon à Nantes. L'objectif était de présenter au public l'application que mon équipe et moi avions développé pendant 2 semaines durant notre formation. Nous devions répondre à une problèmatique, et déterminer la clible d'utilisateurs tout en présetant les  différentes fonctionnalités de l'application.",
+    //     collaborators: [
+    //       { name: "Elowan", avatar: elowan },
+    //       { name: "Gonzague", avatar: gonzague },
+    //     ]
+    //   },
+    // ]
   },
 
   {

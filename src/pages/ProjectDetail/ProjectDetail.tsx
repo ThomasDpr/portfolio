@@ -31,7 +31,7 @@ export const ProjectDetail = () => {
   if (!project) return <div className="project"><p>Project not found</p></div>;
 
   // Si le projet existe, on affiche le détail du projet : titre, image, description, liens, stack
-  const { title, imageSrc, description, appLink, githubLink, stack, youtube} = project;
+  const { title, imageSrc, description, appLink, githubLink, stack} = project;
 
   return (
     <div className="project">
@@ -47,7 +47,7 @@ export const ProjectDetail = () => {
           githubLink={githubLink}
         />
 
-        <Youtube youtube={youtube} />
+        {/* <Youtube youtube={youtube} /> */}
         <ProjectGallery projectId={project.id} />
     </div>
   );
