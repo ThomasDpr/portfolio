@@ -62,5 +62,9 @@
   },
   "devDependencies": {
     "scss-reset": "^1.4.2"
+  },
+  "engines": {
+    "node": "20.5.0",
+    "yarn": "1.22.19"
   }
 }

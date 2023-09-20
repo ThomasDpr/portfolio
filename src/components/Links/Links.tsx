@@ -1,13 +1,15 @@
 import React from 'react'
 import './Links.scss'
-import avatarVideo from '../../assets/movies/memoji.mp4';
 
 import githubIcon from '../../assets/icons/github.svg'
 import linkedinIcon from '../../assets/icons/linkedin.svg'
 export const Links = () => {
+
+  const avatarVideoUrl = 'https://res.cloudinary.com/dimfha9hq/video/upload/v1695168200/portfolio_react/exjrkqwwa2rreahbh4mh.mp4';
+
   return (
     <div className="links-container">
-      <video className="avatar-video" src={avatarVideo} autoPlay loop muted playsInline controls={false} controlsList='nodownload' disableRemotePlayback={false}></video>
+      <video className="avatar-video" src= {avatarVideoUrl} autoPlay loop muted playsInline controls={false} controlsList='nodownload' disableRemotePlayback={false}></video>
       <div className="links-items">
         <a
           className="links-item"
