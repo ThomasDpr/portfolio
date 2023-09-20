@@ -55,11 +55,11 @@
       .project-description__text {
         color: $main-color;
         font-family: $main-font;
-        font-size: 1rem;
+        font-size: 16px;
         text-align: justify;
         line-height: 1.75rem;
         font-weight: 200;
-        hyphens: auto;
+        hyphens: auto; 
         @include container-styles;
       }
     }
