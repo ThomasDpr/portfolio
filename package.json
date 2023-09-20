@@ -10,6 +10,7 @@
   },
   "homepage": "https://www.tdupre.fr",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@cloudinary/react": "^1.11.2",
     "@cloudinary/url-gen": "^1.11.2",
     "@fortawesome/fontawesome-svg-core": "^6.4.2",
@@ -60,7 +61,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "scss-reset": "^1.4.2"
   },
   "engines": {
