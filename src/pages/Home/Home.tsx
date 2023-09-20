@@ -1,7 +1,8 @@
 import React from 'react';
 
 // Import de Helmet & du titre de la page
-import { Helmet } from 'react-helmet';
+import { Helmet } from 'react-helmet-async';
+
 import { homeTitle } from '../../utils/titles';
 
 // Import des composants de la page

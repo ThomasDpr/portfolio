@@ -2,7 +2,7 @@
 import React from "react";
 
 
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet-async';
 import { projectDetailTitle } from "../../utils/titles";
 
 import { useParams } from "react-router-dom";
