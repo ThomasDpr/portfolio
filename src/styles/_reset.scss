@@ -14,18 +14,20 @@ body, html {
 body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-size: 100%;
   line-height: 1.5;
-  text-size-adjust: none;
+  text-size-adjust: 100%;
+}
+
+p {
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 body {
-  // background-color: #F4F3EE;
-  // background-color: #ECE6D7;
+  -webkit-font-smoothing: antialiased;
   background-color: #17181f;
   // background-image: url('../assets/icons/pattern.svg');
   // background-image: radial-gradient(#ece6d6 0.5px, transparent 0.5px);
   // background-size: 32px 32px;
-  // background-color: #17181f;
-
 }
 
 #root, .App {
