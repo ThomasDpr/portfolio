@@ -40,7 +40,7 @@
       // Titre du container
       .project-description__title {
         font-family: $main-font;
-        font-size: 24px;
+        font-size: 1.5rem;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.2em;
@@ -54,14 +54,13 @@
       .project-description__text {
         color: $main-color;
         font-family: $main-font;
-        font-size: 16px;
+        font-size: 1rem;
         text-align: justify;
-        line-height: 1.75rem;
+        line-height: 1.75rem; 
         font-weight: 200;
         @include container-styles;
 
         @include mobile-portrait {
-          font-size: 16px;
           line-height: 1.85rem;
           hyphens: auto;
         }
