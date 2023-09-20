@@ -59,12 +59,8 @@
         text-align: justify;
         line-height: 1.75rem;
         font-weight: 200;
+        hyphens: auto;
         @include container-styles;
-
-        @include mobile-portrait {
-          line-height: 1.85rem;
-          hyphens: auto;
-        }
       }
     }
   }

@@ -15,8 +15,8 @@ export const Youtube = ({ youtube }: { youtube?: { title: string, link: string, 
               className="project-youtube__video"
               title={title}
               src={link}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen={true}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
               key={link}
             />
 
