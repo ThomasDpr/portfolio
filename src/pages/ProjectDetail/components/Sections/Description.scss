@@ -21,7 +21,8 @@
   }
 
 
-  // Wrapper du container (contient le titre et la description)
+  // Wrapper du container contient : [Container : (Titre du container + Description du projet)
+  //                                 [Composant ProjectStack]
   .project-description__block {
     display: flex;
     gap: 40px;
@@ -56,7 +57,7 @@
         font-family: $main-font;
         font-size: 1rem;
         text-align: justify;
-        line-height: 1.75rem; 
+        line-height: 1.75rem;
         font-weight: 200;
         @include container-styles;
 
