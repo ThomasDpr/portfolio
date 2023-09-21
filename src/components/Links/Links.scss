@@ -2,7 +2,7 @@
 
 .links-container {
   width: 100%;
-  height: calc(100vh - 50px);
+  height: $height-with-navbar;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,8 +68,6 @@
   .links-item-text {
     font-size: 20px;
     font-weight: 500;
-    font-family: $main-font;
-    color: $main-color;
 
     @include mobile-portrait {
       font-size: 16px;

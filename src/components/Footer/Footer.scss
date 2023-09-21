@@ -40,8 +40,6 @@
     margin-bottom: 20px;
 
     h3 {
-      color: $main-color;
-      font-family: $main-font;
       font-size: 24px;
     }
 
@@ -62,8 +60,6 @@
         }
 
         p {
-          color: $main-color;
-          font-family: $main-font;
           font-size: 16px;
         }
       }
@@ -76,8 +72,6 @@
     gap: 20px;
 
     h3 {
-      color: $main-color;
-      font-family: $main-font;
       font-size: 24px;
       text-wrap: nowrap;
     }
@@ -99,8 +93,6 @@
         }
 
         span {
-          color: $main-color;
-          font-family: $main-font;
           display: inline;
 
           @include mobile-portrait {
@@ -113,8 +105,6 @@
 
   .footer__copyright {
     p {
-      color: $main-color;
-      font-family: $main-font;
       text-align: center;
       font-size: 14px;
       margin-top: 20px;

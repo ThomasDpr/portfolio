@@ -1,11 +1,5 @@
 @use '../../../../styles/variables.scss' as *;
 
-@mixin container-styles {
-  background-color: $bg-section-light;
-  padding: 20px;
-  border-radius: 20px;
-}
-
 
 //> Composant : [ Liens du projet ]
 .project-links {
@@ -36,8 +30,6 @@
     // Texte du lien
     .project-link-text {
         margin-left: 20px;
-        color: $main-color;
-        font-family: $main-font;
         font-size: 16px;
         text-align: justify;
         line-height: 1.75rem;

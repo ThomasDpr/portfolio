@@ -18,8 +18,7 @@
 
     &__title {
       font-size: 10rem;
-      font-family: $main-font;
-      -webkit-text-stroke: 1px $main-color;
+          -webkit-text-stroke: 1px $main-color;
       -webkit-text-fill-color: transparent;
       max-height: 100px;
       display: flex;
@@ -36,8 +35,6 @@
 
     &__subtitle {
       font-size: 1.25rem;
-      font-family: $main-font;
-      color: $main-color;
       text-align: center;
     }
   }
@@ -45,8 +42,6 @@
     display: flex;
 
     &__link {
-      color: $main-color;
-      font-family: $main-font;
       font-size: 1.25rem;
       border: 1px solid $main-color;
       border-radius: 50px;

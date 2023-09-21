@@ -73,7 +73,7 @@
     top: 50px;
     background-color: rgba(24, 24, 31, 0.9);
     width: 0;
-    height: calc(100vh - 50px);
+    height: $height-with-navbar;
     transition: width 0.3s ease-in-out;
   }
 

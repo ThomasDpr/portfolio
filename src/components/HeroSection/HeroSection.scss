@@ -1,9 +1,9 @@
-@use "../../styles/variables" as *;
+@use '../../styles/variables' as *;
 
 .hero-section {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 50px);
+  height: $height-with-navbar;
 }
 
 .header {
@@ -12,8 +12,6 @@
   width: 100%;
   height: 90%;
   overflow: hidden;
-
-
 
   @include mobile-portrait {
     flex-direction: column;
@@ -33,10 +31,7 @@
     align-items: flex-start;
     gap: 20px;
     width: 50%;
-    font-family: $main-font;
-    color: $main-color;
     height: 100%;
-
 
     @include mobile-portrait {
       width: 100%;
@@ -67,14 +62,14 @@
     }
 
     &__description {
-      font-size: clamp(1rem, 4vw, 1.5rem);
+      font-size: clamp(1rem, 4vw, 1rem);
       font-weight: 200;
       text-align: justify;
       hyphens: auto;
       line-height: 1.75rem;
 
       @include mobile-landscape {
-        font-size: clamp(1rem, 3vh, 1.5rem);
+        font-size: clamp(1rem, 3vh, 1rem);
       }
     }
   }

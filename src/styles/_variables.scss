@@ -1,3 +1,37 @@
+// Hateur avec la navbar :
+$height-with-navbar: calc(100vh - 50px);
+
+// Debug :
+$debug: 2px solid red;
+
+//==================================================//
+
+// Banner
+$banner-bg: linear-gradient(to left, #363636, #000);
+
+// Variables pour la page ProjectDetail :
+$main-font: "Poppins", sans-serif;
+$main-color: #ece6d7;
+$bg-section-dark: rgba(57, 57, 57, 0.5);
+$bg-section-light: rgba(91, 91, 91, 0.5);
+
+
+//==================================================//
+
+
+@mixin container-styles {
+  background-color: $bg-section-light;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@mixin section-styles {
+  background-color: $bg-section-dark;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+
 // Responsive breakpoints
 @mixin mobile-portrait {
   @media (max-width: 968px) {
@@ -10,18 +44,3 @@
     @content;
   }
 }
-
-//==================================================//
-
-// Banner
-$banner-bg: linear-gradient(to left, #363636, #000);
-$container-bg: #f4f3ed;
-
-$height-with-navbar: calc(100vh - 50px);
-$debug: 2px solid red;
-
-// Variables pour la page ProjectDetail :
-$main-font: "Poppins", sans-serif;
-$main-color: #ece6d7;
-$bg-section-dark: rgba(57, 57, 57, 0.5);
-$bg-section-light: rgba(91, 91, 91, 0.5);

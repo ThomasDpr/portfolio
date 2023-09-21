@@ -1,11 +1,5 @@
 @use "../../../../styles/variables.scss" as *;
 
-@mixin container-styles {
-  background-color: $bg-section-light;
-  padding: 20px;
-  border-radius: 20px;
-}
-
 //> Component : [ Stacks du projet ]
 .project-stack {
   width: 100%;
@@ -15,8 +9,7 @@
 
   // Titre du container des stacks
   .project-stack__title {
-      font-family: $main-font;
-      font-size: 24px;
+          font-size: 24px;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 0.2em;
@@ -37,8 +30,6 @@
 
     // Item de la liste des stacks
     .project-stack__item {
-      color: $main-color;
-      font-family: $main-font;
       font-size: 16px;
       text-align: justify;
       line-height: 1.75rem;

@@ -1,10 +1,10 @@
-@use "../../styles/variables" as *;
+@use '../../styles/variables' as *;
 
 .skills {
   display: flex;
   align-items: center;
   gap: 20px;
-  height: calc(100vh - 50px);
+  height: $height-with-navbar;
   width: 100vw;
 
   @include mobile-portrait {
@@ -30,7 +30,7 @@
     }
 
     @include mobile-landscape {
-      height: calc(100vh - 50px);
+      height: $height-with-navbar;
     }
 
     &-header {
@@ -39,8 +39,7 @@
       align-items: center;
       text-transform: uppercase;
       font-size: 48px;
-      font-family: $main-font;
-      -webkit-text-stroke: 1px #ece6d7;
+          -webkit-text-stroke: 1px #ece6d7;
       -webkit-text-fill-color: transparent;
       writing-mode: vertical-rl;
       transform: rotate(180deg);
@@ -134,14 +133,11 @@
     &-text {
       text-transform: uppercase;
       font-size: 14px;
-      font-family: $main-font;
-      color: $main-color;
 
       @include mobile-portrait {
         font-size: 12px;
       }
 
-      
       @include mobile-landscape {
         font-size: 14px;
       }
@@ -166,8 +162,7 @@
       display: block;
       margin-block: -5px;
       font-size: 48px;
-      font-family: $main-font;
-      -webkit-text-stroke: 1px #ece6d7;
+          -webkit-text-stroke: 1px #ece6d7;
       -webkit-text-fill-color: transparent;
     }
   }

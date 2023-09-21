@@ -1,19 +1,12 @@
 @use '../../../../styles/variables' as *;
 
-@mixin container-styles {
-  background-color: $bg-section-light;
-  padding: 20px;
-  border-radius: 20px;
-}
 
 //> Component : [ Description du projet ]
 .project-description {
+  @include section-styles;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: rgba(57, 57, 57, 0.5);
-  padding: 20px;
-  border-radius: 20px;
   gap: 20px;
 
   @include mobile-portrait {
@@ -40,8 +33,7 @@
 
       // Titre du container
       .project-description__title {
-        font-family: $main-font;
-        font-size: 24px;
+              font-size: 24px;
         text-align: center;
         text-transform: uppercase;
         letter-spacing: 0.2em;
@@ -53,8 +45,6 @@
 
       // Description du projet
       .project-description__text {
-        color: $main-color;
-        font-family: $main-font;
         font-size: 16px;
         text-align: justify;
         line-height: 1.75rem;

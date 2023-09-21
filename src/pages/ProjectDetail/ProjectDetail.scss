@@ -1,4 +1,4 @@
-@use "../../styles/variables" as *;
+@use '../../styles/variables' as *;
 
 //=> Container de la page [ ProjectDetail ]
 .project {
@@ -6,7 +6,8 @@
   flex-direction: column;
   align-items: center;
   gap: 40px;
-  padding-inline: 80px;
+  padding-inline: 72px;
+  padding-top: 50px;
 
   @include mobile-portrait {
     padding-inline: 20px;
