@@ -49,46 +49,53 @@
     }
 
     &__title {
-      font-size: 3rem;
+      // font-size: 3rem;
       font-weight: 700;
+      font-size: clamp(2rem, 8vw, 3rem);
 
 
-      @include mobile-portrait {
-        font-size: 2.25rem;
-      }
+      // @include mobile-portrait {
+      //   font-size: 2.25rem;
+      // }
 
-      @include mobile-landscape {
-        font-size: 2rem;
-      }
+      // @include mobile-landscape {
+      //   font-size: 2rem;
+      // }
     }
 
     &__subtitle {
-      font-size: 2.25rem;
+      // font-size: 2.25rem;
       font-weight: 400;
+      font-size: clamp(1.5rem, 6vw, 2.25rem);
 
-      @include mobile-portrait {
-        font-size: 1.75rem;
-      }
 
-      @include mobile-landscape {
-        font-size: 1.5rem;
-      }
+      // @include mobile-portrait {
+      //   font-size: 1.75rem;
+      // }
+
+      // @include mobile-landscape {
+      //   font-size: 1.5rem;
+      // }
     }
 
     &__description {
-      font-size: 1.25rem;
+      // font-size: 1rem;
+      font-size: clamp(0.8rem, 2.5vw, 1rem);
       font-weight: 200;
       text-align: justify;
+      hyphens: auto;
       line-height: 1.75rem;
 
-      @include mobile-portrait {
-        font-size: 1rem;
-        hyphens: auto;
-      }
+
+
+      // @include mobile-portrait {
+      //   font-size: 1rem;
+      //   hyphens: auto;
+      // }
 
       @include mobile-landscape {
-        font-size: 0.8rem;
-        hyphens: auto;
+        font-size: clamp(0.8rem, 2vh, 1rem); // paysage
+
       }
     }
   }
