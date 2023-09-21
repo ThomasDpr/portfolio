@@ -2,21 +2,11 @@
 
 .links-container {
   width: 100%;
-  height: $height-with-navbar;
+  height: calc( $height-with-navbar - 50vh );
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  padding-inline: 72px;
-
-  @include mobile-portrait {
-    // height: 300px;
-  }
-
-  @include mobile-landscape {
-    // height: auto;
-
-  }
 }
 
 

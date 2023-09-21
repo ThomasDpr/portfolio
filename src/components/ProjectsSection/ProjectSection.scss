@@ -6,7 +6,7 @@
   justify-content: space-between;          // Centre les éléments horizontalement
   align-items: center;              // Centre les éléments verticalement
   height: $height-with-navbar;
-  width: 100vw;
+  width: 100%;
 
   @include mobile-portrait {
     flex-direction: column;         // Défini la direction des éléments sur une colonne

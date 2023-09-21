@@ -1,4 +1,3 @@
-import React from 'react'
 import './Links.scss'
 
 import githubIcon from '../../assets/icons/github.svg'

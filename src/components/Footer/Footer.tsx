@@ -78,7 +78,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className="footer__copyright">
-        <p>© 2023 Thomas Dupré - Tous droits réservés</p>
+        <p>&copy; 2023 Thomas Dupré - Tous droits réservés</p>
       </div>
     </footer>
   );
