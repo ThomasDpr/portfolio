@@ -93,10 +93,10 @@
       //   hyphens: auto;
       // }
 
-      @include mobile-landscape {
-        font-size: clamp(0.8rem, 2vh, 1rem); // paysage
+      // @include mobile-landscape {
+      //   font-size: clamp(0.8rem, 2vh, 1rem); // paysage
 
-      }
+      // }
     }
   }
 
