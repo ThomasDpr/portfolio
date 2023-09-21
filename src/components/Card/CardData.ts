@@ -4,7 +4,7 @@ import typescript from '../../assets/icons/typescript.svg'
 import postgresql from '../../assets/icons/postgresql.svg'
 import javascript from '../../assets/icons/javascript.svg'
 
-const musicroad = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/cover.png')
+const musicroad = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695331558/portfolio_react/projects/musicroad/cover.webp')
 const musicroad_index = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/index.png')
 const musicroad_show = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/show.png')
 const musicroad_artist = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/artist.png')
@@ -16,12 +16,12 @@ const musicroad_register = ('https://res.cloudinary.com/dimfha9hq/image/upload/v
 const elowan = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144483/portfolio_react/projects/musicroad/contributors/elowan.png')
 const gonzague = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/contributors/gonzague.png')
 
-const spacebnb = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144239/portfolio_react/projects/spacebnb/home.png')
+const spacebnb = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695331619/portfolio_react/projects/spacebnb/cover.webp')
 const spacebnb_index = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144239/portfolio_react/projects/spacebnb/index.png')
 const spacebnb_show = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144239/portfolio_react/projects/spacebnb/show.png')
 const spacebnb_booking = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144239/portfolio_react/projects/spacebnb/book.png')
 
-const portfolio = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695144569/portfolio_react/projects/portfolio_thomas/cover.jpg')
+const portfolio = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695331338/portfolio_react/projects/portfolio_thomas/cover.webp')
 
 export const projects = [
   {
