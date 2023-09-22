@@ -16,7 +16,7 @@ interface CloudinaryImageProps {
 export const CloudinaryImage = ({ publicId, alt, className }: CloudinaryImageProps) => {
   return (
     <AdvancedImage
-      cldImg={cld.image(publicId)}
+      cldImg={cld.image(publicId).format("webp").quality("auto")}
       className={className}
       alt={alt}
     />

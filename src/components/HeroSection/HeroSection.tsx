@@ -2,7 +2,7 @@ import "./HeroSection.scss";
 import { Banner } from "../Banner/Banner";
 import { CloudinaryImage } from "../../utils/CloudinaryImage";
 
-const avatar = "portfolio_react/mslffprpiccmya8urkv0";
+const avatar = "portfolio_react/mslffprpiccmya8urkv0.png";
 
 export const HeroSection = () => {
   return (
