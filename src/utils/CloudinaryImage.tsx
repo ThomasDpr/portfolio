@@ -11,12 +11,17 @@ interface CloudinaryImageProps {
   publicId: string;
   alt?: string;
   className?: string;
+  width?: number;
 }
 
 export const CloudinaryImage = ({ publicId, alt, className }: CloudinaryImageProps) => {
+
+  const imageConfig = cld.image(publicId).format("webp").quality("auto");
+
   return (
     <AdvancedImage
-      cldImg={cld.image(publicId).format("webp").quality("auto")}
+      // cldImg={cld.image(publicId).format("webp").quality("auto")}
+      cldImg={imageConfig}
       className={className}
       alt={alt}
     />
