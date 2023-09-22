@@ -1,5 +1,3 @@
-import React from 'react'
-
 interface SkillsItemProps {
   src: string;
   alt: string;
@@ -9,9 +7,9 @@ interface SkillsItemProps {
 
 export const SkillsItem = ({ src, alt, text, id }: SkillsItemProps) => {
   return (
-    <div className="skills__item">
-      <img src={src} alt={alt} className="skills__item-icon" id={id} />
-      <p className="skills__item-text">{text}</p>
+    <div className="skills__sections__item">
+      <img src={src} alt={alt} className="skills__sections__item-icon" id={id} />
+      <p className="skills__sections__item-text">{text}</p>
     </div>
   );
 }

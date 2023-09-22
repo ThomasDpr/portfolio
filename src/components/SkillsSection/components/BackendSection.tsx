@@ -7,8 +7,8 @@ import nestjs from "../../../assets/icons/nestjs.svg";
 
 export const BackendSection = () => {
   return (
-    <section className="skills__section">
-      <div className="skills__section-content skills__section-content_backend">
+    <section className="skills__sections__section">
+      <div className="skills__sections__section-content skills__sections__section-content_backend">
         <SkillsItem
           src={ruby}
           alt="ruby"
@@ -31,7 +31,7 @@ export const BackendSection = () => {
         />
       </div>
 
-      <header className="skills__section-header skills__section-header_backend">
+      <header className="skills__sections__section-header skills__sections__section-header_backend">
         <h3>BACKEND</h3>
       </header>
     </section>
