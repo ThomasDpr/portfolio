@@ -4,9 +4,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .page {
   width: clamp(200px, 100%, 2560px);
   margin-block: 50px;
+
 }

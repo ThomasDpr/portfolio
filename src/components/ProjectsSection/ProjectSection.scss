@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;          // Centre les éléments horizontalement
   align-items: center;              // Centre les éléments verticalement
-  height: $height-with-navbar;
+  height: clamp(100px, $height-with-navbar, 1400px);
   width: 100%;
 
   @include mobile-portrait {
