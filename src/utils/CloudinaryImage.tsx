@@ -20,7 +20,6 @@ export const CloudinaryImage = ({ publicId, alt, className }: CloudinaryImagePro
 
   return (
     <AdvancedImage
-      // cldImg={cld.image(publicId).format("webp").quality("auto")}
       cldImg={imageConfig}
       className={className}
       alt={alt}

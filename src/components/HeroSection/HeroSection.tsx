@@ -21,19 +21,12 @@ export const HeroSection = () => {
         </section>
 
         <figure className="header__image">
-  <picture>
-    <source media="(max-width: 320px)"
-            srcSet={`https://res.cloudinary.com/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload/w_320/${avatar}`} />
-    <source media="(max-width: 480px)"
-            srcSet={`https://res.cloudinary.com/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload/w_480/${avatar}`} />
-    <source media="(max-width: 800px)"
-            srcSet={`https://res.cloudinary.com/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload/w_800/${avatar}`} />
-    <img src={`https://res.cloudinary.com/${process.env.REACT_APP_CLOUDINARY_CLOUD_NAME}/image/upload/${avatar}`}
-         alt="Portrait de Thomas Dupré"
-         className="header__image__img" />
-  </picture>
-</figure>
-
+          <CloudinaryImage
+            publicId={avatar}
+            className="header__image__img"
+            alt="Portrait de Thomas Dupré"
+          />
+        </figure>
       </header>
       <Banner />
     </div>
