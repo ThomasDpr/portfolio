@@ -1,6 +1,7 @@
 import { Cloudinary } from "@cloudinary/url-gen";
 import { AdvancedImage } from "@cloudinary/react";
 
+
 export const cld = new Cloudinary({
   cloud: {
     cloudName: process.env.REACT_APP_CLOUDINARY_CLOUD_NAME,
@@ -16,7 +17,8 @@ interface CloudinaryImageProps {
 
 export const CloudinaryImage = ({ publicId, alt, className }: CloudinaryImageProps) => {
 
-  const imageConfig = cld.image(publicId).format("webp").quality("auto");
+  const imageConfig = cld.image(publicId)
+                          .quality("auto")
 
   return (
     <AdvancedImage
