@@ -1,4 +1,3 @@
-import React from "react";
 import Marquee from "react-fast-marquee";
 import "./Banner.scss";
 
@@ -34,7 +33,7 @@ export const Banner = () => {
   return (
     <div className="banner">
       <div className="banner__container">
-        <Marquee {...marqueeProps} gradientColor={[0,0,0]}>
+        <Marquee {...marqueeProps} gradientColor="#000">
             {items.map((item, index) => (
           <div className="banner__container__text" key={index}>
               <img className="banner__container__text__icon" src={item.icon} alt={item.text + " icon"} />
