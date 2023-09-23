@@ -1,8 +1,8 @@
-import rails from '../../assets/icons/rails.svg'
-import react from '../../assets/icons/react.svg'
-import typescript from '../../assets/icons/typescript.svg'
-import postgresql from '../../assets/icons/postgresql.svg'
-import javascript from '../../assets/icons/javascript.svg'
+import rails from '../assets/icons/rails.svg'
+import react from '../assets/icons/react.svg'
+import typescript from '../assets/icons/typescript.svg'
+import postgresql from '../assets/icons/postgresql.svg'
+import javascript from '../assets/icons/javascript.svg'
 
 const musicroad = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695331558/portfolio_react/projects/musicroad/cover.webp')
 const musicroad_index = ('https://res.cloudinary.com/dimfha9hq/image/upload/v1695143301/portfolio_react/projects/musicroad/index.png')

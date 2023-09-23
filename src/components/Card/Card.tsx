@@ -1,7 +1,15 @@
-import { CardProps } from "./CardType";
 import { Link } from 'react-router-dom';
 
 import "./Card.scss";
+
+export interface CardProps {
+  title: string;
+  imageSrc: string;
+  iconSrc: string;
+  variant?: 'default' | 'projects';
+  id: string;
+}
+
 
 export const Card = ({ title, imageSrc, iconSrc, id, variant = 'default' }: CardProps & { id: string }) => {
 

@@ -1,8 +1,8 @@
-import './Links.scss'
+import './LinksSection.scss'
 
-import githubIcon from '../../assets/icons/github.svg'
-import linkedinIcon from '../../assets/icons/linkedin.svg'
-export const Links = () => {
+import githubIcon from '../../../../assets/icons/github.svg'
+import linkedinIcon from '../../../../assets/icons/linkedin.svg'
+export const LinksSection = () => {
 
   const avatarVideoUrl = 'https://res.cloudinary.com/dimfha9hq/video/upload/f_auto:video,q_auto/v1/portfolio_react/exjrkqwwa2rreahbh4mh';
 

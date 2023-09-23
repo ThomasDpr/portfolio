@@ -1,13 +1,12 @@
 import "./HeroSection.scss";
-import { Banner } from "../Banner/Banner";
-import { CloudinaryImage } from "../../utils/CloudinaryImage";
+import { Banner } from "./Banner/Banner";
+import { CloudinaryImage } from "../../../../utils/CloudinaryImage";
 
 const avatar = "portfolio_react/avatar-hero.webp";
 
 export const HeroSection = () => {
   return (
     <div className="hero-section">
-
       <header className="header">
         <section className="header__text">
           <h1 className="header__text__title">Thomas Dupré</h1>

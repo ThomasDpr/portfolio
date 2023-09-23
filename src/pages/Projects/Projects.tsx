@@ -1,17 +1,16 @@
 // import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import { Helmet } from 'react-helmet-async';
-import { projectsTitle } from '../../utils/titles';
+import { Helmet } from "react-helmet-async";
+import { projectsTitle } from "../../utils/titles";
 
-import { projects } from '../../components/Card/CardData'
+import { projects } from "../../data/projects";
 
-import { Card } from '../../components/Card/Card'
+import { Card } from "../../components/Card/Card";
 
-import './Projects.scss'
+import "./Projects.scss";
 
 export const Projects = () => {
-
   // // Ici, nous définissons un état local nommé "selectedStacks" qui est un tableau de chaînes de caractères.
   // // "useState" est une fonction qui retourne un tableau avec deux éléments :
   // // - le premier élément est la valeur de l'état local
@@ -79,17 +78,20 @@ export const Projects = () => {
 
   return (
     <div className="projects">
-    <Helmet>
-      <title>{projectsTitle}</title>
-    </Helmet>
+      <Helmet>
+        <title>{projectsTitle}</title>
+      </Helmet>
 
-    <div className="projects__cards">
-      {projects.map((project, index) => (
-        <Link to={`/projects/${project.id}`} key={index} className="projects__cards__link">
-          <Card {...project} variant="projects" />
-        </Link>
-      ))}
+      <div className="projects__cards">
+        {projects.map((project, index) => (
+          <Link
+            to={`/projects/${project.id}`}
+            key={index}
+            className="projects__cards__link">
+            <Card {...project} variant="projects" />
+          </Link>
+        ))}
+      </div>
     </div>
-  </div>
   );
-}
+};

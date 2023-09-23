@@ -2,12 +2,12 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import "./Banner.scss";
 
-import brush from "../../assets/icons/brush.svg";
-import book from "../../assets/icons/book.svg";
-import binoculars from "../../assets/icons/binoculars.svg";
-import heart from "../../assets/icons/heart.svg";
-import medal from "../../assets/icons/medal.svg";
-import gears from "../../assets/icons/gears.svg";
+import brush from "../../../../../assets/icons/brush.svg";
+import book from "../../../../../assets/icons/book.svg";
+import binoculars from "../../../../../assets/icons/binoculars.svg";
+import heart from "../../../../../assets/icons/heart.svg";
+import medal from "../../../../../assets/icons/medal.svg";
+import gears from "../../../../../assets/icons/gears.svg";
 
 export const Banner = () => {
 
