@@ -4,20 +4,58 @@
   @include section-styles;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  gap: 40px;
+  align-items: center;
+  gap: 30px;
+
+  .input-box {
+    position: relative;
+    width: 450px;
+
+    input,
+    textarea {
+      width: 100%;
+      resize: vertical;
+      @include container-styles;
+      border: unset;
+      color: #ece6d7;
+      border: 1px solid #ece6d772;
+      outline: none;
+      font-size: 1rem;
+      font-family: $main-font;
+      background-color: transparent;
+      transition: all 0.3s;
+
+      &:focus {
+        border: 1.2px solid #ece6d7;
+      }
+    }
+
+    label {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      pointer-events: none;
+      font-size: 1rem;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      color: #777;
+    }
+
+    input:focus ~ label,
+    textarea:focus ~ label,
+    input:not(:placeholder-shown) ~ label,
+    textarea:not(:placeholder-shown) ~ label {
+      color: #cccccc;
+      font-size: 0.8rem;
+      background-color: #28292C;
+      letter-spacing: 0.1rem;
+      transform: scale(0.75) translateY(-40px) translateX(10px);
+      padding: 0 5px;
+    }
+  }
 }
 
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    resize: none;
-    @include container-styles;
-    border: unset;
-    color: white;
-  }
 
   button {
     background-color: #007bff;
@@ -33,48 +71,3 @@
       background-color: #0056b3;
     }
   }
-
-
-
-
-  // background-color: #28292C;
-
-
-
-
-// .input-field {
-//   width: 100%;
-//   padding: 10px 25px;
-//   border: 1px solid #cccccc;
-//   border-radius: 4px;
-//   background-color: transparent;
-//   transition: all 0.3s;
-// }
-
-// .input-field:focus {
-//   border-color: #007BFF;
-//   outline: none;
-// }
-
-// .input-field:focus + .floating-label,
-// .input-field:not(:placeholder-shown) + .floating-label {
-//   transform: scale(0.75) translateY(-25px);
-//   left: 10px;
-//   background-color: #17181f;
-//   padding: 0 5px;
-// }
-
-// .floating-label {
-//   position: absolute;
-//   pointer-events: none;
-//   left: 10px;
-//   top: 10px;
-//   transform-origin: 0 0;
-//   transition: all 0.2s;
-//   background-color: transparent;
-//   padding: 0;
-// }
-
-// .input-field:focus + .floating-label {
-//   color: #007BFF;
-// }

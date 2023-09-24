@@ -51,30 +51,43 @@ export const ContactForm = () => {
   return (
     <form className="contact-form" onSubmit={handleSubmit}>
       <input type="hidden" name="to_name" value="Thomas" />
-    <input
-      type="text"
-      name="from_name"
-      placeholder="Entrez votre nom"
-      value={from_name}
-      onChange={handleChange}
-    />
-      <input
-        type="email"
-        name="from_email"
-        placeholder="Entrez votre email"
-        value={from_email}
-        onChange={handleChange}
-      />
-      <textarea
-        name="message"
-        placeholder="Saisissez votre message"
-        value={message}
-        onChange={handleChange}
-        maxLength={500}
-      />
-      <div>
-        {message.length}/500
+      <div className="input-box">
+        <input
+          type="text"
+          required
+          name="from_name"
+          value={from_name}
+          onChange={handleChange}
+          placeholder=" "
+
+        />
+        <label htmlFor="from_name">Nom</label>
       </div>
+      <div className="input-box">
+        <input
+          type="email"
+          required
+          name="from_email"
+          value={from_email}
+          onChange={handleChange}
+          placeholder=" "
+        />
+        <label htmlFor="from_email">Email</label>
+      </div>
+      <div className="input-box">
+        <textarea
+          name="message"
+          required
+          value={message}
+          onChange={handleChange}
+          maxLength={500}
+          placeholder=" "
+
+        />
+        <label htmlFor="message">Message</label>
+      </div>
+
+      <div>{message.length}/500</div>
       <button type="submit">Envoyer</button>
     </form>
   );
