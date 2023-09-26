@@ -1,93 +1,77 @@
-import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { useForm } from "react-hook-form";
+import { ContactInputField } from "./ContactInputField";
+import { ContactTextAreaField } from "./ContactTextAreaField";
+
 import "./ContactForm.scss";
 
-export const ContactForm = () => {
-  const [formData, setFormData] = useState({
-    to_name: "Thomas",
-    from_name: "",
-    from_email: "",
-    message: "",
-  });
+type FormData = {
+  to_name: string;
+  from_name: string;
+  from_email: string;
+  message: string;
+};
 
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value,
+export const ContactForm = () => {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+    watch,
+  } = useForm<FormData>();
+
+  const messageValue = watch("message", "");
+
+  const onSubmit = (data: FormData) => {
+    emailjs.send(
+      process.env.REACT_APP_SERVICE_ID as string,
+      process.env.REACT_APP_TEMPLATE_ID as string,
+      data,
+      process.env.REACT_APP_PUBLIC_ID as string
+    )
+    .then(() => {
+      alert("Votre message a bien été envoyé");
+      reset();
+    })
+    .catch(() => {
+      alert("Une erreur s’est produite, veuillez réessayer");
     });
   };
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    emailjs
-      .send(
-        process.env.REACT_APP_SERVICE_ID as string,
-        process.env.REACT_APP_TEMPLATE_ID as string,
-        formData,
-        process.env.REACT_APP_PUBLIC_ID as string
-      )
-
-      .then((result) => {
-        console.log(result.text);
-        alert("Votre message a bien été envoyé");
-        setFormData({
-          to_name: "Thomas",
-          from_name: "",
-          from_email: "",
-          message: "",
-        });
-      })
-      .catch((error) => {
-        console.log(error.text);
-        alert("Une erreur s'est produite, veuillez réessayer");
-      });
-  };
-
-  const { from_name, from_email, message } = formData;
-
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <input type="hidden" name="to_name" value="Thomas" />
-      <div className="input-box">
-        <input
-          type="text"
-          required
-          name="from_name"
-          value={from_name}
-          onChange={handleChange}
-          placeholder=" "
+    <form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
+      <ContactInputField
+        register={register}
+        errors={errors.from_name}
+        label="Nom"
+        name="from_name"
+        placeholder=" "
+        validation={{ required: 'Veuillez entrer votre nom' }}
+      />
+      <ContactInputField
+        register={register}
+        errors={errors.from_email}
+        label="Email"
+        name="from_email"
+        type="email"
+        placeholder=" "
+        validation={{ required: 'Veuillez entrer votre email' }}
+      />
 
-        />
-        <label htmlFor="from_name">Nom</label>
-      </div>
-      <div className="input-box">
-        <input
-          type="email"
-          required
-          name="from_email"
-          value={from_email}
-          onChange={handleChange}
-          placeholder=" "
-        />
-        <label htmlFor="from_email">Email</label>
-      </div>
-      <div className="input-box">
-        <textarea
-          name="message"
-          required
-          value={message}
-          onChange={handleChange}
-          maxLength={500}
-          placeholder=" "
-
-        />
-        <label htmlFor="message">Message</label>
-      </div>
-
-      <div>{message.length}/500</div>
+      <ContactTextAreaField
+        register={register}
+        errors={errors.message}
+        label="Message"
+        name="message"
+        placeholder=" "
+        maxLength={500}
+        validation={{
+          required: 'Veuillez entrer un message',
+          maxLength: 500,
+        }}
+        watch={messageValue}
+      />
       <button type="submit">Envoyer</button>
     </form>
   );

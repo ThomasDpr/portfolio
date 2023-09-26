@@ -20,9 +20,10 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
+p, span{
   overflow-wrap: break-word;
   hyphens: auto;
+
 }
 
 body {
@@ -51,6 +52,4 @@ a {
 
 button {
   cursor: pointer;
-  background-color: transparent;
-  border: none;
 }

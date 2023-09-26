@@ -1,0 +1,37 @@
+@use '../../../styles/variables' as *;
+
+.contact__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-style: normal;
+}
+
+.contact__title {
+  font-size: clamp(1.3rem, 4vw, 1.5rem);
+
+  @include mobile-landscape {
+    font-size: clamp(1.3rem, 3vh, 1.5rem);
+  }
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+
+.contact__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.contact__text {
+  font-size: 1rem;
+  hyphens: none;
+  font-weight: 300;
+}

@@ -1,0 +1,43 @@
+@use '../../../styles/variables' as *;
+
+.social__items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social__title {
+  font-size: clamp(1.3rem, 4vw, 1.5rem);
+
+  @include mobile-landscape {
+    font-size: clamp(1.3rem, 3vh, 1.5rem);
+  }
+}
+
+.social__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+
+  @include mobile-portrait {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+.social__link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social__text {
+  font-size: 1rem;
+  hyphens: none;
+  font-weight: 300;
+
+  @include mobile-portrait {
+    display: none;
+  }
+}
