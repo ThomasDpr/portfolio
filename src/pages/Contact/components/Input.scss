@@ -1,0 +1,96 @@
+@use "../../../styles/variables" as *;
+
+.input-box {
+    position: relative;
+    width: 100%;
+
+    &:hover {
+        label {
+            color: #cccccc;
+            font-size: 0.8rem;
+            background-color: rgb(66, 66, 67);
+            letter-spacing: 0.1rem;
+            transform: scale(0.75) translateY(-40px) translateX(10px);
+            padding: 0 5px;
+        }
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        min-height: 60px;
+        @include container-styles;
+        border: unset;
+        color: #ece6d7;
+        border: 1px solid #ece6d7a9;
+        font-size: 1rem;
+        font-family: $main-font;
+        background-color: transparent;
+
+        &:focus {
+            border: 1.2px solid #ece6d7;
+            outline: none;
+        }
+
+        &:disabled {
+            cursor: not-allowed;
+        }
+
+        &.field-error {
+            border: 1px solid red !important;
+            animation: shake 0.3s ease-in-out;
+        }
+
+        &.field-valid {
+            border: 1px solid green !important;
+        }
+    }
+
+    textarea {
+        height: 150px;
+        resize: vertical;
+        max-height: 260px;
+    }
+
+    label {
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        pointer-events: none;
+        font-size: 1rem;
+        text-transform: uppercase;
+        transition: all 0.3s;
+        color: #ece6d7a9;
+    }
+
+    input:focus ~ label,
+    textarea:focus ~ label,
+    input:not(:placeholder-shown) ~ label,
+    textarea:not(:placeholder-shown) ~ label {
+        color: #cccccc;
+        font-size: 0.8rem;
+        background-color: rgb(66, 66, 67);
+        letter-spacing: 0.1rem;
+        transform: scale(0.75) translateY(-40px) translateX(10px);
+        padding: 0 5px;
+    }
+}
+
+// Animations :
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

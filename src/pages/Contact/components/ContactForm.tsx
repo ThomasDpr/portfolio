@@ -1,78 +1,115 @@
-import emailjs from "@emailjs/browser";
-import { useForm } from "react-hook-form";
-import { ContactInputField } from "./ContactInputField";
-import { ContactTextAreaField } from "./ContactTextAreaField";
+// import emailjs from "@emailjs/browser";
+import emailjs from "./mockEmailJs";
+
+import { useForm , SubmitHandler, Controller } from "react-hook-form";
+
+import { FormValues } from "../types/formTypes";
+import { Input } from "./Input";
+import { Textarea } from "./Textarea";
+import { Button } from "./Button";
+
+import { yupResolver } from "@hookform/resolvers/yup";
+import { schema } from "../validation";
 
 import "./ContactForm.scss";
-
-type FormData = {
-  to_name: string;
-  from_name: string;
-  from_email: string;
-  message: string;
-};
+import { useEffect } from "react";
 
 export const ContactForm = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-    reset,
-    watch,
-  } = useForm<FormData>();
+    const {
+        register,
+        handleSubmit,
+        reset,
+        formState: { errors, isSubmitting, isSubmitSuccessful},
+    } = useForm<FormValues>({
 
-  const messageValue = watch("message", "");
-
-  const onSubmit = (data: FormData) => {
-    emailjs.send(
-      process.env.REACT_APP_SERVICE_ID as string,
-      process.env.REACT_APP_TEMPLATE_ID as string,
-      data,
-      process.env.REACT_APP_PUBLIC_ID as string
-    )
-    .then(() => {
-      alert("Votre message a bien été envoyé");
-      reset();
-    })
-    .catch(() => {
-      alert("Une erreur s’est produite, veuillez réessayer");
+        defaultValues: { to_name: "Thomas" },
+        resolver: yupResolver(schema),
+        mode: 'onTouched',
+        reValidateMode: 'onBlur',
     });
-  };
 
-  return (
-    <form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
-      <ContactInputField
-        register={register}
-        errors={errors.from_name}
-        label="Nom"
-        name="from_name"
-        placeholder=" "
-        validation={{ required: 'Veuillez entrer votre nom' }}
-      />
-      <ContactInputField
-        register={register}
-        errors={errors.from_email}
-        label="Email"
-        name="from_email"
-        type="email"
-        placeholder=" "
-        validation={{ required: 'Veuillez entrer votre email' }}
-      />
+    const onSubmit: SubmitHandler<FormValues> = async (values) => {
+        console.log('values', values)
 
-      <ContactTextAreaField
-        register={register}
-        errors={errors.message}
-        label="Message"
-        name="message"
-        placeholder=" "
-        maxLength={500}
-        validation={{
-          required: 'Veuillez entrer un message',
-          maxLength: 500,
-        }}
-        watch={messageValue}
-      />
-      <button type="submit">Envoyer</button>
-    </form>
-  );
+        try {
+            await emailjs.send(
+                process.env.REACT_APP_SERVICE_ID as string,
+                process.env.REACT_APP_TEMPLATE_ID as string,
+                values,
+                process.env.REACT_APP_PUBLIC_ID as string
+            );
+            reset();
+
+        } catch (error) {
+            alert("Une erreur s'est produite, veuillez réessayer.")
+        }
+    };
+
+    useEffect(() => {
+        if (isSubmitSuccessful) {
+            const timer = setTimeout(() => {
+                reset();
+            }, 5000);
+            return () => clearTimeout(timer);
+        }
+    }
+    , [isSubmitSuccessful, reset]);
+
+    return (
+        <form className="contact__form" onSubmit={handleSubmit(onSubmit)}>
+            <div className="contact__form__wrapper">
+                <Input
+                    register={register}
+                    errors={errors}
+                    name="first_name"
+                    label="Prénom"
+                    type="text"
+                    placeholder=" "
+                    required={true}
+                    isSubmitting={isSubmitting}
+                    isAutoCompleted={false}
+                />
+
+                <Input
+                    register={register}
+                    errors={errors}
+                    name="last_name"
+                    label="Nom"
+                    type="text"
+                    placeholder=" "
+                    required={true}
+                    isSubmitting={isSubmitting}
+                    isAutoCompleted={false}
+                />
+            </div>
+
+            <Input
+                register={register}
+                errors={errors}
+                name="email"
+                label="Email"
+                type="email"
+                placeholder=" "
+                required={true}
+                isSubmitting={isSubmitting}
+                isAutoCompleted={false}
+            />
+
+            <Textarea
+                register={register}
+                errors={errors}
+                name="message"
+                label="Message"
+                placeholder=" "
+                required={true}
+            />
+
+            <Button
+                type="submit"
+                isSubmitting={isSubmitting}
+                isSubmitSuccessful={isSubmitSuccessful}>
+                Envoyer
+            </Button>
+        </form>
+    );
 };

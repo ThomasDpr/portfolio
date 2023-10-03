@@ -1,126 +1,110 @@
-@use '../../styles/variables' as *;
+@use "../../styles/variables" as *;
 
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-inline: 72px;
+  padding-top: 50px;
   min-height: clamp(100px, $height-with-navbar, 1400px);
-  gap: 40px;
+  gap: 2rem;
   width: 100%;
 
   @include mobile-portrait {
     padding-inline: 20px;
   }
+}
 
-  .contact-container {
+.contact__header {
+  width: 100%;
+  display: flex;
+  @include section-styles;
+
+  &__title {
+    @include container-styles;
+    width: 100%;
     display: flex;
     justify-content: center;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 5vw, 3rem);
+    -webkit-text-stroke: 1px $main-color;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.contact__container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 2rem;
+
+  @include mobile-portrait {
+    flex-direction: column;
+  }
+}
+
+.contact__container__info {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  @include section-styles;
+
+  @include mobile-portrait {
     width: 100%;
-    height: 100%;
-    gap: 2rem;
-
-    @include mobile-portrait {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
   }
+}
 
-  .contact__form__container {
-    width: 40%;
+.contact__container__info__content {
+  @include container-styles;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  &__text {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
-    background-color: rgba(57, 57, 57, 0.5);
-
-    @include mobile-portrait {
-      width: 100%;
-    }
-  }
-
-  .contact__info__container {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 20px;
     gap: 2rem;
 
-    @include mobile-portrait {
-      width: 100%;
+    span {
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      text-align: justify;
     }
+  }
+}
 
-    &-title {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      @include section-styles;
+.contact__container__info__content__socials {
+  display: flex;
+  gap: 1rem;
+  align-self: flex-end;
 
-      &__text {
-        @include container-styles;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        text-transform: uppercase;
-        font-size: clamp(2rem, 5vw, 3rem);
-        -webkit-text-stroke: 1px $main-color;
-        -webkit-text-fill-color: transparent;
-      }
+  @include mobile-portrait {
+    align-self: center;
+  }
+
+  &__item {
+    transition: all 0.3s;
+    font-size: 2.5rem;
+
+    &:hover {
+      color: lighten(#ece6d7, 20%);
+      transform: scale(1.2);
     }
+  }
+}
 
-    &-content {
-      @include section-styles;
-      width: 100%;
-      height: 100%;
-
-      &-box {
-        @include container-styles;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2rem;
-        width: 100%;
-        height: 100%;
-        padding: 2rem;
-
-
-          &-text {
-            text-align: justify;
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-
-            span {
-              font-size: clamp(1rem, 2vw, 1.125rem);
-            }
-          }
-
-          &-socials {
-            display: flex;
-            gap: 1rem;
-            align-self: flex-end;
-
-            @include mobile-portrait {
-              align-self: center;
-            }
-
-            &-item {
-              color: #ece6d7;
-              transition: color 0.3s;
-              font-size: 2.5rem;
-
-              &:hover {
-                color: lighten(#ece6d7, 20%);
-              }
-            }
-          }
-
-      }
-
-
-    }
+.contact__form__container {
+  @include section-styles;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  @include mobile-portrait {
+    width: 100%;
   }
 }

@@ -8,7 +8,7 @@ export const cld = new Cloudinary({
   },
 });
 
-interface CloudinaryImageProps {
+type CloudinaryImageProps = {
   publicId: string;
   alt?: string;
   className?: string;

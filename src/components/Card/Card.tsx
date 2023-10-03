@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 
 import "./Card.scss";
 
-export interface CardProps {
+export type CardProps = {
   title: string;
   imageSrc: string;
   iconSrc: string;

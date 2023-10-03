@@ -3,7 +3,7 @@ import { Footer } from "./Footer/Footer";
 import { ScrollToTop } from "./ScrollToTop/ScrollToTop";
 import { ReactNode } from "react";
 
-interface LayoutProps {
+type LayoutProps = {
   children: ReactNode;
 }
 
