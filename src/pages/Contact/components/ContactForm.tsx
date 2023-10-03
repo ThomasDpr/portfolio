@@ -1,7 +1,7 @@
-// import emailjs from "@emailjs/browser";
-import emailjs from "./mockEmailJs";
+import emailjs from "@emailjs/browser";
+// import emailjs from "./mockEmailJs";
 
-import { useForm , SubmitHandler, Controller } from "react-hook-form";
+import { useForm , SubmitHandler} from "react-hook-form";
 
 import { FormValues } from "../types/formTypes";
 import { Input } from "./Input";
@@ -29,7 +29,6 @@ export const ContactForm = () => {
     });
 
     const onSubmit: SubmitHandler<FormValues> = async (values) => {
-        console.log('values', values)
 
         try {
             await emailjs.send(

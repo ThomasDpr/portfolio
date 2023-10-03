@@ -57,8 +57,6 @@ export const Button = ({
             )
     }
 
-    console.log('Button Variant:', buttonVariant);
-
     return (
         <button
             type={type}
