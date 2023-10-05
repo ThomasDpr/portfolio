@@ -90,5 +90,5 @@ Pour toute question ou demande de collaboration, vous pouvez me contacter par ma
 
 ---
 <p align="center">
-    <strong>🌟 N'hésitez pas à jeter un œil à mon <a href="https://thomasdpr-portfolio.com">portfolio en ligne</a> ! 🌟</strong>
+    <strong>🌟 N'hésitez pas à jeter un œil à mon <a href="https://tdupre.fr">portfolio en ligne</a> ! 🌟</strong>
 </p>
