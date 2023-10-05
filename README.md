@@ -79,7 +79,7 @@ Bienvenue sur le dépôt de mon portfolio personnel! C'est ici que je mets en av
 
 ## Licence 📄
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE](LICENSE) pour plus de détails.
+Ce projet est sous licence MIT - voir le fichier [LICENSE](https://github.com/ThomasDpr/portfolio/blob/main/LICENCE) pour plus de détails.
 
 ---
 
