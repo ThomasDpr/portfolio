@@ -1,43 +1,52 @@
-@use '../../../../styles/variables' as *;
+@use "../../../../styles/variables" as *;
 
 //> Component : [ Header du projet ]
 .project-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  width: 100%;
-
-  //=== [ Titre du projet ]
-  &__title {
-    @include section-styles;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    &__text {
-      @include container-styles;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      text-transform: uppercase;
-      font-size: clamp(2rem, 5vw, 3rem);
-      -webkit-text-stroke: 1px $main-color;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-
-  //=== [ Image du projet ]
-  &__image {
     @include section-styles;
     width: 100%;
     height: 50vh;
-    // Image du projet
-    &__img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      border-radius: 20px;
+    position: relative;
+
+    //=== [ Image du projet ]
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+        filter: blur(0.2rem);
+
+        //=== [ Titre du projet ]
+        &__title {
+            // @include section-styles;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            &__text {
+                @include container-styles;
+                width: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+                font-size: clamp(1rem, 5vw, 3rem);
+                -webkit-text-stroke: 1px $main-color;
+                -webkit-text-fill-color: transparent;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                background-color: rgba(24, 24, 31, 0.256);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+                backdrop-filter: blur(20px);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 2;
+            }
+        }
     }
-  }
 }

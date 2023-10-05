@@ -4,7 +4,6 @@ import {
   FreeMode,
   Keyboard,
 } from 'swiper/modules';
-// import { Swiper, SwiperSlide } from 'swiper/react';
 import { SwiperProps } from 'swiper/react';
 
 export const swiperConfigScreen: SwiperProps = {

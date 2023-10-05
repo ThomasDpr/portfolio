@@ -1,0 +1,71 @@
+@use '../../styles/variables' as *;
+
+.skills__header {
+    @include section-styles;
+    width: 100%;
+    height: 50vh;
+
+    .skills__header__flex-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+
+        // .download-link {
+        //     backdrop-filter: blur(20px);
+        //     background-color: rgba(24, 24, 31, 0.256);
+        //     color: #ece6d7;
+        //     border: 1px solid #ece6d772;
+        //     padding: 20px;
+        //     border-radius: 20px;
+        //     transition: all 0.3s ease-in-out;
+        //     display: flex;
+        //     align-items: center;
+        //     align-self: flex-end;
+        //     justify-content: center;
+        //     gap: 1rem;
+        //     font-size: 1rem;
+
+        //     &:hover {
+        //         color: #17181f;
+        //         background: rgba(255, 255, 255, 0.36);
+        //         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        //         backdrop-filter: blur(20px);
+        //         border: 1px solid rgba(255, 255, 255, 0.18);
+        //         transform: scale(1.05);
+        //     }
+        // }
+    }
+
+    //=== [ Titre du projet ]
+    &__title {
+        // @include section-styles;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        &__text {
+            @include container-styles;
+            min-width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform: uppercase;
+            font-size: clamp(1rem, 5vw, 3rem);
+            -webkit-text-stroke: 1px $main-color;
+            -webkit-text-fill-color: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background-color: rgba(24, 24, 31, 0.256);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            backdrop-filter: blur(20px);
+            text-align: center;
+        }
+    }
+}
