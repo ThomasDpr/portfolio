@@ -5,23 +5,8 @@
 _Un aperçu visuel de mes compétences et réalisations._
 
 
-<div style="display: flex; gap: 40px;">
 
-
-
-[![Hostinger Status](https://img.shields.io/website-up-down-green-red/https/tdupre.fr.svg?label=hostinger&style=for-the-badge)](https://www.tdupre.fr)
-
-[![Licence](https://img.shields.io/github/license/ThomasDpr/portfolio?style=for-the-badge&color=blue)](https://github.com/ThomasDpr/portfolio/blob/main/LICENCE)
-
-[![Issues](https://img.shields.io/github/issues/ThomasDpr/portfolio?style=for-the-badge)](https://github.com/ThomasDpr/portfolio/issues)
-
-[![Pull Requests](https://img.shields.io/github/issues-pr/ThomasDpr/portfolio?style=for-the-badge&color=blue)](https://github.com/ThomasDpr/portfolio/pulls)
-
-[![Dernier commit](https://img.shields.io/github/last-commit/ThomasDpr/portfolio?style=for-the-badge)](https://github.com/ThomasDpr/portfolio/commits/main)
-
-</div>
-
-<!-- ![Aperçu du Portfolio](https://res.cloudinary.com/dimfha9hq/image/upload/v1695400794/portfolio_react/skills/cover.webp) -->
+[![Hostinger Status](https://img.shields.io/website-up-down-green-red/https/tdupre.fr.svg?label=hostinger&style=for-the-badge)](https://www.tdupre.fr) [![Licence](https://img.shields.io/github/license/ThomasDpr/portfolio?style=for-the-badge&color=blue)](https://github.com/ThomasDpr/portfolio/blob/main/LICENCE) [![Issues](https://img.shields.io/github/issues/ThomasDpr/portfolio?style=for-the-badge)](https://github.com/ThomasDpr/portfolio/issues) [![Pull Requests](https://img.shields.io/github/issues-pr/ThomasDpr/portfolio?style=for-the-badge&color=blue)](https://github.com/ThomasDpr/portfolio/pulls) [![Dernier commit](https://img.shields.io/github/last-commit/ThomasDpr/portfolio?style=for-the-badge)](https://github.com/ThomasDpr/portfolio/commits/main)
 
 
 </div>
