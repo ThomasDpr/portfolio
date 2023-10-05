@@ -1,6 +1,6 @@
 <div align="center">
 
-# Portfolio de Thomas Dupré 👨‍💻
+# Portfolio de Thomas Dupré 👨🏻‍💻
 
 _Un aperçu visuel de mes compétences et réalisations._
 
