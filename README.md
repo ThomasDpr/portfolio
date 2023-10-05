@@ -11,7 +11,7 @@ _Un aperçu visuel de mes compétences et réalisations._
 
 [![Hostinger Status](https://img.shields.io/website-up-down-green-red/https/tdupre.fr.svg?label=hostinger&style=for-the-badge)](https://www.tdupre.fr)
 
-[![Licence](https://img.shields.io/github/license/ThomasDpr/portfolio?style=for-the-badge&color=blue)](https://github.com/ThomasDpr/portfolio/blob/main/LICENSE)
+[![Licence](https://img.shields.io/github/license/ThomasDpr/portfolio?style=for-the-badge&color=blue)](https://github.com/ThomasDpr/portfolio/blob/main/LICENCE)
 
 [![Issues](https://img.shields.io/github/issues/ThomasDpr/portfolio?style=for-the-badge)](https://github.com/ThomasDpr/portfolio/issues)
 
