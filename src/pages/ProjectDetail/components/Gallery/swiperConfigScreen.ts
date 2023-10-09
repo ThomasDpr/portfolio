@@ -1,13 +1,13 @@
 import {
   Navigation,
   Pagination,
-  FreeMode,
   Keyboard,
+  Zoom,
 } from 'swiper/modules';
 import { SwiperProps } from 'swiper/react';
 
 export const swiperConfigScreen: SwiperProps = {
-  modules: [Navigation, Pagination, FreeMode, Keyboard],
+  modules: [Navigation, Pagination, Keyboard, Zoom],
   spaceBetween: 30,
   slidesPerView: 1,
   direction: 'vertical',
@@ -33,4 +33,8 @@ export const swiperConfigScreen: SwiperProps = {
       direction: 'vertical',
     },
   },
+  zoom: {
+    maxRatio: 1.5,
+    minRatio: 0.5,
+  }
 };

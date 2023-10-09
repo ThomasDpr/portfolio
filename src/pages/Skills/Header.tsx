@@ -1,7 +1,7 @@
-import './Header.scss'
+import "./Header.scss";
 
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
     return (
@@ -17,13 +17,16 @@ export const Header = () => {
                     </h1>
                 </section>
 
-                {/* <a
-                        href="/cv.pdf"
-                        className="download-link"
-                        download="CV_Dupré_Thomas.pdf">
-                        <FontAwesomeIcon icon={faDownload} />
-                        Curriculum Vitae
-                    </a> */}
+                <a
+                    href="/cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="download-link">
+                    <FontAwesomeIcon icon={faDownload} />
+                    <span className="text-default">Curriculum Vitae</span>
+                    <span className="text-mobile-portrait">Voir mon CV</span>
+                    <span className="text-mobile-landscape">CV</span>
+                </a>
             </div>
         </section>
     );

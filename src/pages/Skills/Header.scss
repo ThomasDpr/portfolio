@@ -15,35 +15,73 @@
         background-position: center;
         background-repeat: no-repeat;
         border-radius: 20px;
+        position: relative;
 
-        // .download-link {
-        //     backdrop-filter: blur(20px);
-        //     background-color: rgba(24, 24, 31, 0.256);
-        //     color: #ece6d7;
-        //     border: 1px solid #ece6d772;
-        //     padding: 20px;
-        //     border-radius: 20px;
-        //     transition: all 0.3s ease-in-out;
-        //     display: flex;
-        //     align-items: center;
-        //     align-self: flex-end;
-        //     justify-content: center;
-        //     gap: 1rem;
-        //     font-size: 1rem;
+        .download-link {
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(24, 24, 31, 0.256);
+            backdrop-filter: blur(20px);
+            padding: 10px 20px;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            font-size: 1rem;
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
 
-        //     &:hover {
-        //         color: #17181f;
-        //         background: rgba(255, 255, 255, 0.36);
-        //         box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-        //         backdrop-filter: blur(20px);
-        //         border: 1px solid rgba(255, 255, 255, 0.18);
-        //         transform: scale(1.05);
-        //     }
-        // }
+            .text-default {
+                display: inline;
+            }
+
+            .text-mobile-portrait,
+            .text-mobile-landscape {
+                display: none;
+            }
+
+            @include mobile-portrait {
+                bottom: 10px;
+                right: 10px;
+                .text-default,
+                .text-mobile-landscape {
+                    display: none;
+                }
+
+                .text-mobile-portrait {
+                    display: inline;
+                }
+            }
+
+            @include mobile-landscape {
+                bottom: 5px;
+                right: 5px;
+
+                .text-default,
+                .text-mobile-portrait {
+                    display: none;
+                }
+
+                .text-mobile-landscape {
+                    display: inline;
+                }
+            }
+
+            &:hover {
+                color: #17181f;
+                border: 1px solid rgba(255, 255, 255, 0.18);
+                background: rgba(255, 255, 255, 0.36);
+                box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+                transform: scale(1.05);
+            }
+        }
     }
 
     //=== [ Titre du projet ]
     &__title {
+        // @include section-styles;
         width: 100%;
         display: flex;
         justify-content: center;
