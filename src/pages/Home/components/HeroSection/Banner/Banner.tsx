@@ -27,7 +27,6 @@ export const Banner = () => {
     gradientWidth: 20,
     autoFill: true,
     gradient: true,
-    // play:false,
   };
 
   return (

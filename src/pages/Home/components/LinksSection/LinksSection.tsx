@@ -1,32 +1,29 @@
-import './LinksSection.scss'
-
-import githubIcon from '../../../../assets/icons/github.svg'
-import linkedinIcon from '../../../../assets/icons/linkedin.svg'
+import { Link } from "react-router-dom";
+import "./LinksSection.scss";
 export const LinksSection = () => {
+    const avatarVideoUrl =
+        "https://res.cloudinary.com/dimfha9hq/video/upload/f_auto:video,q_auto/v1/portfolio_react/exjrkqwwa2rreahbh4mh";
 
-  const avatarVideoUrl = 'https://res.cloudinary.com/dimfha9hq/video/upload/f_auto:video,q_auto/v1/portfolio_react/exjrkqwwa2rreahbh4mh';
-
-  return (
-    <div className="links-container">
-      <video className="avatar-video" src={avatarVideoUrl} autoPlay loop muted playsInline controls={false} controlsList='nodownload' disableRemotePlayback={false}></video>
-      <div className="links-items">
-        <a
-          className="links-item"
-          href="https://www.linkedin.com/in/thomas-dupre/"
-          target="_blank"
-          rel="noopener noreferrer">
-          <img className="links-item-icon" src={linkedinIcon} alt="Logo de Linkedin" />
-          <span className="links-item-text">Linkedin</span>
-        </a>
-        <a
-          className="links-item"
-          href="https://github.com/ThomasDpr"
-          target="_blank"
-          rel="noopener noreferrer">
-          <img className="links-item-icon" src={githubIcon} alt="Logo de Github" />
-          <span className="links-item-text">Github</span>
-        </a>
-      </div>
-    </div>
-  )
-}
+    return (
+        <div className="links-container">
+            <video
+                className="avatar-video"
+                src={avatarVideoUrl}
+                autoPlay
+                loop
+                muted
+                playsInline
+                controls={false}
+                controlsList="nodownload"
+                disableRemotePlayback={false}></video>
+            <div className="links-text">
+                <p>Envie de me contacter ?</p>
+                <p>J'attends vos retours avec impatience !</p>
+                <Link to="/contact" className="link">
+                    {/* <button className="contact-button">Me contacter</button> */}
+                    Me contacter
+                </Link>
+            </div>
+        </div>
+    );
+};
