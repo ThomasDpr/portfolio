@@ -39,7 +39,7 @@ export const Navbar = () => {
               <Link to='/skills' className="navbar__elements__link">Mes compétences</Link>
             </li>
             <li>
-              <Link to='/contact' className="navbar__elements__link">Me contacter</Link>
+              <Link to='/contact' className="navbar__elements__link" id="contact">Contact</Link>
             </li>
           </ul>
         </div>

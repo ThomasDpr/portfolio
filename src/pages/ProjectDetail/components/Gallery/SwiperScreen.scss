@@ -35,13 +35,6 @@
       height: 100%;
       object-fit:cover;
       border-radius: 20px;
-
-      @include mobile-portrait {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 20px;
-      }
     }
   }
 
@@ -81,10 +74,12 @@
 
 .swiper-button-prev-screen {
   background-image: url(../../../../assets/icons/arrow-left.svg);
+  background-position: center;
 }
 
 .swiper-button-next-screen {
   background-image: url(../../../../assets/icons/arrow-right.svg);
+    background-position: center;
 }
 
 
@@ -104,8 +99,7 @@
   }
 }
 .swiper-pagination-bullet-screen {
-  // background-color: rgba(0, 0, 0, 0.8);
-  background-color: #ECE6D7;
+    background-color: #ECE6D7;
   width: 8px;
   height: 8px;
   border-radius: 50%;
@@ -113,7 +107,6 @@
 }
 
 .swiper-pagination-bullet-active-screen {
-  // background-color: rgba(0, 0, 0, 0.8);
   background-color: #ECE6D7;
   width: 10px;
   height: 10px;

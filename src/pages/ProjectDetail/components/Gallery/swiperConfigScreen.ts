@@ -25,7 +25,6 @@ export const swiperConfigScreen: SwiperProps = {
     prevEl: ".swiper-button-prev-screen",
   },
   loop: true,
-  speed: 500,
   breakpoints: {
     10: {
       direction: 'horizontal',

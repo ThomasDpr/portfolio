@@ -1,101 +1,159 @@
-@use '../../../../styles/variables' as *;
+@use "../../../../styles/variables" as *;
 
 .hero-section {
-  display: flex;
-  flex-direction: column;
-  // height: $height-with-navbar; // 100vh - 50px (navbar height)
-  height: clamp(100px, $height-with-navbar, 1400px);
-  width: 100%;
+    display: flex;
+    flex-direction: column;
+    // height: $height-with-navbar; // 100vh - 50px (navbar height)
+    height: clamp(100px, $height-with-navbar, 1400px);
+    width: 100%;
 }
 
 .header {
-  display: flex;
-  padding-inline: 72px;
-  height: 90%;
-  overflow: hidden;
-
-  @include mobile-portrait {
-    flex-direction: column;
-    padding-inline: 20px;
-  }
-
-  @include mobile-landscape {
-    flex-direction: row;
-    padding-inline: 20px;
-    height: 80%;
-  }
-
-  &__text {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 20px;
-    width: 50%;
-    height: 100%;
+    align-items: center;
+    padding-inline: 72px;
+    height: 90%;
+    overflow: hidden;
 
     @include mobile-portrait {
-      width: 100%;
-      gap: 10px;
-      padding-block: 20px;
+        flex-direction: column;
+        padding-inline: 20px;
     }
 
     @include mobile-landscape {
-      gap: 10px;
+        flex-direction: row;
+        padding-inline: 20px;
+        height: 80%;
+    }
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        width: 50%;
+        height: 100%;
+
+        @include mobile-portrait {
+            width: 100%;
+            gap: 10px;
+            padding-block: 20px;
+        }
+
+        @include mobile-landscape {
+            gap: 10px;
+        }
     }
 
     &__title {
-      font-weight: 700;
-      font-size: clamp(2rem, 4vw, 3rem);
+        font-weight: 700;
+        font-size: clamp(2rem, 4vw, 3rem);
 
-      @include mobile-landscape {
-        font-size: clamp(2rem, 3vh, 2.5rem)
-      }
+        @include mobile-landscape {
+            font-size: clamp(2rem, 3vh, 2.5rem);
+        }
     }
 
     &__subtitle {
-      font-weight: 400;
-      font-size: clamp(1.5rem, 4vw, 2rem);
+        font-weight: 400;
+        font-size: clamp(1.5rem, 4vw, 2rem);
 
-      @include mobile-landscape {
-        font-size: clamp(1.5rem, 3vh, 2rem);
-      }
+        @include mobile-landscape {
+            font-size: clamp(1.5rem, 3vh, 2rem);
+        }
     }
 
     &__description {
-      font-size: clamp(1rem, 4vw, 1rem);
-      font-weight: 200;
-      text-align: justify;
-      hyphens: auto;
-      line-height: 1.75rem;
+        font-size: clamp(1rem, 4vw, 1rem);
+        font-weight: 300;
+        text-align: justify;
+        line-height: 1.75rem;
 
-      @include mobile-landscape {
-        font-size: clamp(1rem, 3vh, 1rem);
-      }
+        @include mobile-landscape {
+            font-size: clamp(1rem, 3vh, 1rem);
+        }
     }
-  }
 
-  &__image {
-    width: 50%;
-    height: 100%;
+    &__image {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-self: flex-end;
+
+        @include mobile-portrait {
+            width: 100%;
+            max-height: 50%;
+        }
+
+        @include mobile-landscape {
+            width: 50%;
+            max-height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+        }
+    }
+}
+
+.buttons-socials {
     display: flex;
-    align-self: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 100%;
 
     @include mobile-portrait {
-      width: 100%;
-      max-height: 50%;
+        gap: 10px;
+        justify-content: center;
     }
 
     @include mobile-landscape {
-      width: 50%;
-      max-height: 100%;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+}
+
+.button-social {
+    font-weight: 500;
+    font-size: 1rem;
+    border-radius: 20px;
+    padding: 16px 32px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    @include mobile-portrait {
+        padding: 8px 16px;
+        font-size: 0.75rem;
+        border-radius: 10px;
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+    &:first-child {
+        background-color: #000;
+        color: #ece6d7;
+        &:hover {
+            background-color: #ece6d7;
+            color: #000;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        }
     }
-  }
+
+    &:last-child {
+        background-color: #ece6d7;
+        color: #000;
+        &:hover {
+            background-color: #000;
+            color: #ece6d7;
+            transform: scale(1.1);
+            box-shadow: 0px 0px 10px rgba(225, 224, 224, 0.5);
+        }
+    }
 }

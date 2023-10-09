@@ -5,7 +5,7 @@
   height: 50px;
   width: 100%;
   backdrop-filter: blur(20px);
-  background-color: rgba(24, 24, 31, 0.8);
+  background-color: rgba(24, 24, 31, 0.5);
   position: fixed;
   z-index: 1000;
   top: 0;
@@ -17,7 +17,6 @@
   align-items: center;
   height: 100%;
   padding-inline: 72px;
-
 }
 
 .navbar__logo {
@@ -42,11 +41,15 @@
 }
 
 .navbar__elements__link {
-  font-size: 16px;
   font-weight: 500;
-  color: #fef7e5;
-  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: 8px 16px;
+  transition: all .10s ease-in-out;
 
+  &:hover {
+    background-color: #ece6d71c;
+  }
 }
 
 @include mobile-portrait {
@@ -78,7 +81,6 @@
   }
 
   .navbar__elements.active {
-    // Largeur du menu mobile (270px)
     width: 270px;
   }
 
@@ -90,4 +92,14 @@
   .navbar__elements__link {
     font-size: 20px;
   }
+}
+
+#contact {
+    background-color: #ece6d7;
+    color: #000;
+    &:hover {
+      color: #ece6d7;
+      background-color: #000;
+    }
+
 }

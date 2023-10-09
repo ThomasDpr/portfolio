@@ -36,9 +36,9 @@ export const swiperConfig: SwiperProps = {
   // },
   centeredSlides: true,
   loop: true,
-  loopedSlides: 0.5,
+  loopedSlides: 1,
   loopPreventsSliding: true,
-  speed: 800,
+//   speed: 800,
   effect: "coverflow",
   coverflowEffect: {
     rotate: 0,
