@@ -21,9 +21,6 @@ export const HeroSection = () => {
                         préférence pour le développement{" "}
                         <strong>front-end</strong>, j'ai également consolidé une
                         solide expérience en back-end.
-                        <br />
-                        Mon objectif ? Allier esthétisme et fonctionnalité pour
-                        offrir une expérience utilisateur optimale.
                     </p>
                     <div className="buttons-socials">
                         <a

@@ -23,7 +23,7 @@
     @include mobile-landscape {
         flex-direction: row;
         padding-inline: 20px;
-        height: 80%;
+        height: 100%;
     }
 
     &__text {
@@ -109,7 +109,7 @@
 
     @include mobile-portrait {
         gap: 10px;
-        justify-content: center;
+        justify-content: flex-end;
     }
 
     @include mobile-landscape {
